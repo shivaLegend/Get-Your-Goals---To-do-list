@@ -17,15 +17,17 @@ class ViewController: UIViewController {
   @IBOutlet weak var toDoTableView: UITableView!
   @IBOutlet weak var goalsTableView: UITableView!
   
+  @IBOutlet weak var addGoalButton: UIButton!
   var realm = try! Realm()
 //  var toDoList: Results<ToDo>?
   var goalList: Results<Goal>?
+  
   var toDoList: Results<ToDo> {
     get {
-      return realm.objects(ToDo.self).sorted(byKeyPath: "time", ascending: true)
+      return realm.objects(ToDo.self).sorted(byKeyPath: "time", ascending: true) //Sort array
     }
   }
-
+  //Start data everyday
 //  let beginingday = NSCalendar.current.dateComponents([.hour, .minute], from: Date())
   
   override func viewDidLoad() {
@@ -33,10 +35,6 @@ class ViewController: UIViewController {
     
 //    toDoList = realm.objects(ToDo.self)
     goalList = realm.objects(Goal.self)
-    
-    for i in toDoList {
-      print(i)
-    }
     
     //add observing to reload data
     NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "loadToDoList"), object: nil)
@@ -68,11 +66,35 @@ class ViewController: UIViewController {
   @IBAction func addGoalsClickButton(_ sender: Any) {
   }
   
+  @IBAction func doneButton_Press(_ sender: UIButton) {
+    let alert = UIAlertController(title: "Delete Every Thing", message: nil, preferredStyle: .alert)
+    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+      self.dismiss(animated: true, completion: nil)
+    }
+    let yesAction = UIAlertAction(title: "Yes", style: .default) { (action) in
+      // Delete all objects from the realm
+      try! self.realm.write {
+        self.realm.deleteAll()
+      }
+      self.loadList()
+      self.loadGoal()
+    }
+    alert.addAction(cancelAction)
+    alert.addAction(yesAction)
+    present(alert, animated: true)
+  }
+  
 }
 
+// MARK: - UITableView Delegate & Datasource
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     if tableView == goalsTableView {
+      if (goalList?.count)! < 3 {
+        addGoalButton.isHidden = false
+      } else {
+        addGoalButton.isHidden = true
+      }
       return goalList?.count ?? 0
     }
     return toDoList.count
@@ -91,6 +113,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     cell.delegate = self
     cell.nameLbl.text = toDoList[indexPath.row].name
     
+    //take the time
     let date = toDoList[indexPath.row].time
     let calendar = Calendar.current
     let comp = calendar.dateComponents([.hour, .minute], from: date)
@@ -113,7 +136,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
       minuteString = String(describing: comp.minute!)
     }
     
-    
+    if hourInt! <= 12 {
+      minuteString = minuteString + " AM"
+    } else {
+      minuteString = minuteString + " PM"
+    }
     
     cell.timeLbl.text = hourString + ":" + minuteString
     

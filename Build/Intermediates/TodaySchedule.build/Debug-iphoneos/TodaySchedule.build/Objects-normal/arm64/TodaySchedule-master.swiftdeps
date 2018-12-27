@@ -1,12 +1,12 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "eecbad83a6419b593b4115a4b84cd5a3"
-build_time: [1545845471, 290131000]
+build_time: [1545904030, 93072000]
 inputs:
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Controllers/AddToDoViewController.swift": [1545844714, 0]
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Controllers/AddGoalViewController.swift": [1545475633, 0]
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Models/ToDo.swift": [1544752713, 0]
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Views/ToDoTableViewCell.swift": [1545749201, 0]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Controllers/ViewController.swift": [1545845471, 0]
+  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Controllers/ViewController.swift": [1545904029, 0]
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Views/GoalTableViewCell.swift": [1545317606, 0]
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/AppDelegate.swift": [1545022191, 0]
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Models/Goal.swift": [1545318167, 0]

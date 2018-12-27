@@ -19,39 +19,39 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lys-fu-Sq9">
-                        <rect key="frame" x="20" y="23.5" width="45.5" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLJ-4h-SAA">
-                        <rect key="frame" x="70" y="23.5" width="87.5" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lys-fu-Sq9">
+                        <rect key="frame" x="15" y="23.5" width="75" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdM-bx-UQi">
-                        <rect key="frame" x="20" y="47.5" width="280" height="2"/>
+                        <rect key="frame" x="10" y="47.5" width="300" height="2"/>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="2" id="JSG-oC-ptQ"/>
                         </constraints>
                     </view>
                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="sbi-bB-6jx">
-                        <rect key="frame" x="275" y="19.5" width="25" height="25"/>
+                        <rect key="frame" x="280" y="19.5" width="25" height="25"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLJ-4h-SAA">
+                        <rect key="frame" x="98" y="23.5" width="87.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="sbi-bB-6jx" secondAttribute="trailing" constant="20" id="01w-Sd-5U7"/>
-                    <constraint firstItem="sLJ-4h-SAA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="70" id="1W6-hI-nNb"/>
-                    <constraint firstAttribute="trailing" secondItem="pdM-bx-UQi" secondAttribute="trailing" constant="20" id="5kb-GI-5MN"/>
-                    <constraint firstItem="pdM-bx-UQi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="FM7-LC-SOc"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sLJ-4h-SAA" secondAttribute="trailing" constant="20" id="JsV-g1-crc"/>
+                    <constraint firstAttribute="trailing" secondItem="sbi-bB-6jx" secondAttribute="trailing" constant="15" id="01w-Sd-5U7"/>
+                    <constraint firstAttribute="trailing" secondItem="pdM-bx-UQi" secondAttribute="trailing" constant="10" id="5kb-GI-5MN"/>
+                    <constraint firstItem="pdM-bx-UQi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="FM7-LC-SOc"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sLJ-4h-SAA" secondAttribute="trailing" constant="25" id="JsV-g1-crc"/>
                     <constraint firstItem="sbi-bB-6jx" firstAttribute="bottom" secondItem="sLJ-4h-SAA" secondAttribute="bottom" id="dYW-qD-bkz"/>
+                    <constraint firstItem="sLJ-4h-SAA" firstAttribute="leading" secondItem="Lys-fu-Sq9" secondAttribute="trailing" constant="8" id="g7B-hZ-47n"/>
                     <constraint firstItem="pdM-bx-UQi" firstAttribute="top" secondItem="Lys-fu-Sq9" secondAttribute="bottom" constant="3" id="o7I-6F-zlB"/>
                     <constraint firstItem="sLJ-4h-SAA" firstAttribute="bottom" secondItem="Lys-fu-Sq9" secondAttribute="bottom" id="pzx-Lh-i0O"/>
-                    <constraint firstItem="Lys-fu-Sq9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="sM4-FK-DJw"/>
+                    <constraint firstItem="Lys-fu-Sq9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="sM4-FK-DJw"/>
                     <constraint firstAttribute="bottom" secondItem="pdM-bx-UQi" secondAttribute="bottom" id="syl-MI-BFq"/>
                 </constraints>
             </tableViewCellContentView>

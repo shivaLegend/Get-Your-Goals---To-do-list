@@ -288,16 +288,19 @@ SWIFT_CLASS("_TtC13TodaySchedule17ToDoTableViewCell")
 @end
 
 @class UITableView;
+@class UIButton;
 
 SWIFT_CLASS("_TtC13TodaySchedule14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified toDoTableView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified goalsTableView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addGoalButton;
 - (void)viewDidLoad;
 - (void)loadList;
 - (void)loadGoal;
 - (IBAction)addScheduleClickButton:(id _Nonnull)sender;
 - (IBAction)addGoalsClickButton:(id _Nonnull)sender;
+- (IBAction)doneButton_Press:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
