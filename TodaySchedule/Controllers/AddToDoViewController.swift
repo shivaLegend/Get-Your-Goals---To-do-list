@@ -24,6 +24,14 @@ class AddToDoViewController: UIViewController {
     toDoTextView.textColor = UIColor.lightGray
     toDoTextView.delegate = self
     
+    let borderColor = UIColor(displayP3Red: 58/255, green: 62/255, blue: 69/255, alpha: 1.0)
+    textView.layer.borderColor = borderColor.cgColor
+    textView.layer.borderWidth = 1.0
+    textView.layer.cornerRadius = 5.0
+    timeDatePicker.layer.borderColor = borderColor.cgColor
+    timeDatePicker.layer.borderWidth = 1.0
+    timeDatePicker.layer.cornerRadius = 5.0
+    
     }
     
   @IBAction func cancelClick(_ sender: Any) {

@@ -15,10 +15,15 @@ class ToDoTableViewCell: SwipeTableViewCell {
   @IBOutlet weak var checkImg: UIImageView!
   @IBOutlet weak var nameLbl: UILabel!
   @IBOutlet weak var timeLbl: UILabel!
+  @IBOutlet weak var circleView: UIView!
   
   override func awakeFromNib() {
         super.awakeFromNib()
-        
+    circleView.layer.cornerRadius = circleView.frame.size.width/2
+    circleView.clipsToBounds = true
+    
+    circleView.layer.borderColor = UIColor.black.cgColor
+    circleView.layer.borderWidth = 5.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

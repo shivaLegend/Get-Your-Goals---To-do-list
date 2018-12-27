@@ -19,6 +19,11 @@ class AddGoalViewController: UIViewController {
       goalTextView.text = "Set your goal !"
       goalTextView.textColor = UIColor.lightGray
       goalTextView.delegate = self
+      
+      let borderColor = UIColor(displayP3Red: 58/255, green: 62/255, blue: 69/255, alpha: 1.0)
+      goalTextView.layer.borderColor = borderColor.cgColor
+      goalTextView.layer.borderWidth = 1.0
+      goalTextView.layer.cornerRadius = 5.0
     }
     
   @IBAction func cancelClick(_ sender: Any) {

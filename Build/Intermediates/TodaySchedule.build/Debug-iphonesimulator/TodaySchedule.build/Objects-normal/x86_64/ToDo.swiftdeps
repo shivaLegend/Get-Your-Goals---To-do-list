@@ -11,7 +11,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - "Date"
 - "Object"
-- "StringLiteralType"
 - "ToDo"
 depends-member:
 - ["10RealmSwift28AssistedObjectiveCBridgeableP", "Date"]
@@ -106,6 +105,7 @@ depends-member:
 - !private ["10RealmSwift14ThreadConfinedP", "init"]
 - !private ["10RealmSwift14ThreadConfinedP", "init"]
 - ["13TodaySchedule4ToDoC", "Date"]
+- ["13TodaySchedule4ToDoC", "deinit"]
 - ["13TodaySchedule4ToDoC", "init"]
 - ["13TodaySchedule4ToDoC", "name"]
 - ["13TodaySchedule4ToDoC", "time"]

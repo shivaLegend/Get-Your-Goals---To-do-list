@@ -164,7 +164,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 //    }
     
 //    cell.timeLbl.text = hourString + ":" + minuteString
-    print(updateClock(date: date))
     cell.timeLbl.text = updateClock(date: date)
     return cell
   }

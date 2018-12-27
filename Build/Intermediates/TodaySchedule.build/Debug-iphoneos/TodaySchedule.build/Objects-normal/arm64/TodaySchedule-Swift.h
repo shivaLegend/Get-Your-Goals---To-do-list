@@ -263,6 +263,27 @@ SWIFT_CLASS("_TtC13TodaySchedule17GoalTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIColor;
+
+SWIFT_CLASS("_TtC13TodaySchedule13RoundUIButton")
+@interface RoundUIButton : UIButton
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+@property (nonatomic) CGFloat borderWidth;
+@property (nonatomic) CGFloat cornerRadius;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13TodaySchedule11RoundUIView")
+@interface RoundUIView : UIView
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+@property (nonatomic) CGFloat borderWidth;
+@property (nonatomic) CGFloat cornerRadius;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC13TodaySchedule4ToDo")
 @interface ToDo : RealmSwiftObject
@@ -281,6 +302,7 @@ SWIFT_CLASS("_TtC13TodaySchedule17ToDoTableViewCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified checkImg;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLbl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLbl;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified circleView;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -288,7 +310,6 @@ SWIFT_CLASS("_TtC13TodaySchedule17ToDoTableViewCell")
 @end
 
 @class UITableView;
-@class UIButton;
 
 SWIFT_CLASS("_TtC13TodaySchedule14ViewController")
 @interface ViewController : UIViewController

@@ -16,10 +16,12 @@
 		CF0F534921AAF45F000B7648 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F534721AAF45F000B7648 /* ToDoTableViewCell.swift */; };
 		CF0F534A21AAF45F000B7648 /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0F534821AAF45F000B7648 /* ToDoTableViewCell.xib */; };
 		CF11A7A721AB92E3007E3500 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11A7A621AB92E3007E3500 /* AddToDoViewController.swift */; };
+		CF151EAA21D51D4200FC90CF /* RoundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF151EA921D51D4200FC90CF /* RoundUIView.swift */; };
 		CF48D47A21CBDF89001A6638 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48D47821CBDF89001A6638 /* GoalTableViewCell.swift */; };
 		CF48D47B21CBDF89001A6638 /* GoalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF48D47921CBDF89001A6638 /* GoalTableViewCell.xib */; };
 		CF48D47D21CBE51E001A6638 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48D47C21CBE51E001A6638 /* Goal.swift */; };
 		CF48D47F21CBF9A7001A6638 /* AddGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48D47E21CBF9A7001A6638 /* AddGoalViewController.swift */; };
+		CF77A7F721D52333009A4745 /* RoundUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF77A7F621D52333009A4745 /* RoundUIButton.swift */; };
 		CFAECB9221C3451200CD798A /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAECB9121C3451200CD798A /* ToDo.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,10 +38,12 @@
 		CF0F534721AAF45F000B7648 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		CF0F534821AAF45F000B7648 /* ToDoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTableViewCell.xib; sourceTree = "<group>"; };
 		CF11A7A621AB92E3007E3500 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		CF151EA921D51D4200FC90CF /* RoundUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUIView.swift; sourceTree = "<group>"; };
 		CF48D47821CBDF89001A6638 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		CF48D47921CBDF89001A6638 /* GoalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalTableViewCell.xib; sourceTree = "<group>"; };
 		CF48D47C21CBE51E001A6638 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		CF48D47E21CBF9A7001A6638 /* AddGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewController.swift; sourceTree = "<group>"; };
+		CF77A7F621D52333009A4745 /* RoundUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUIButton.swift; sourceTree = "<group>"; };
 		CFAECB9121C3451200CD798A /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		D243CB6625286CA89F8BAEF3 /* Pods_TodaySchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodaySchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +111,8 @@
 		CF0F534621AAF40D000B7648 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CF77A7F521D52323009A4745 /* Custom UIButton */,
+				CF151EA821D51D2500FC90CF /* Custom UIView */,
 				CF0F533821AAA1F5000B7648 /* Main.storyboard */,
 				CF0F533D21AAA1F7000B7648 /* LaunchScreen.storyboard */,
 				CF0F534721AAF45F000B7648 /* ToDoTableViewCell.swift */,
@@ -125,6 +131,22 @@
 				CF48D47E21CBF9A7001A6638 /* AddGoalViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF151EA821D51D2500FC90CF /* Custom UIView */ = {
+			isa = PBXGroup;
+			children = (
+				CF151EA921D51D4200FC90CF /* RoundUIView.swift */,
+			);
+			path = "Custom UIView";
+			sourceTree = "<group>";
+		};
+		CF77A7F521D52323009A4745 /* Custom UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				CF77A7F621D52333009A4745 /* RoundUIButton.swift */,
+			);
+			path = "Custom UIButton";
 			sourceTree = "<group>";
 		};
 		CFAECB9021C344D300CD798A /* Models */ = {
@@ -270,11 +292,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF77A7F721D52333009A4745 /* RoundUIButton.swift in Sources */,
 				CF11A7A721AB92E3007E3500 /* AddToDoViewController.swift in Sources */,
 				CF48D47F21CBF9A7001A6638 /* AddGoalViewController.swift in Sources */,
 				CFAECB9221C3451200CD798A /* ToDo.swift in Sources */,
 				CF0F534921AAF45F000B7648 /* ToDoTableViewCell.swift in Sources */,
 				CF0F533721AAA1F5000B7648 /* ViewController.swift in Sources */,
+				CF151EAA21D51D4200FC90CF /* RoundUIView.swift in Sources */,
 				CF48D47A21CBDF89001A6638 /* GoalTableViewCell.swift in Sources */,
 				CF0F533521AAA1F5000B7648 /* AppDelegate.swift in Sources */,
 				CF48D47D21CBE51E001A6638 /* Goal.swift in Sources */,
@@ -427,7 +451,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B24EEZ8S3G;
 				INFOPLIST_FILE = TodaySchedule/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NguyenDucTai.TodaySchedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -443,7 +470,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B24EEZ8S3G;
 				INFOPLIST_FILE = TodaySchedule/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NguyenDucTai.TodaySchedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

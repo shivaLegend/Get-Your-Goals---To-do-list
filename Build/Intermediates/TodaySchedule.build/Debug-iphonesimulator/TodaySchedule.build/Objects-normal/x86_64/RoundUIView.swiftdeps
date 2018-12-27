@@ -1,0 +1,367 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RoundUIView"
+provides-nominal:
+- "13TodaySchedule11RoundUIViewC"
+provides-member:
+- ["13TodaySchedule11RoundUIViewC", ""]
+provides-dynamic-lookup:
+- "borderColor"
+- "borderWidth"
+- "cornerRadius"
+depends-top-level:
+- "AssignmentPrecedence"
+- "CGFloat"
+- "FloatLiteralType"
+- "RoundUIView"
+- "UIColor"
+- "UIView"
+depends-member:
+- !private ["So7CALayerC", "borderColor"]
+- !private ["So7CALayerC", "borderWidth"]
+- !private ["So7CALayerC", "cornerRadius"]
+- ["So15CALayerDelegateP", "UIColor"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "borderColor"]
+- !private ["So15CALayerDelegateP", "borderWidth"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So13CAMediaTimingP", "borderColor"]
+- !private ["So13CAMediaTimingP", "borderWidth"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
+- ["s7CVarArgP", "UIColor"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "borderColor"]
+- !private ["s7CVarArgP", "borderWidth"]
+- !private ["s7CVarArgP", "cgColor"]
+- !private ["s7CVarArgP", "cornerRadius"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layer"]
+- ["s7CVarArgP", "white"]
+- ["s28CustomDebugStringConvertibleP", "UIColor"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "borderColor"]
+- !private ["s28CustomDebugStringConvertibleP", "borderWidth"]
+- !private ["s28CustomDebugStringConvertibleP", "cgColor"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- ["s28CustomDebugStringConvertibleP", "white"]
+- ["s23CustomStringConvertibleP", "UIColor"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "borderColor"]
+- !private ["s23CustomStringConvertibleP", "borderWidth"]
+- !private ["s23CustomStringConvertibleP", "cgColor"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- ["s23CustomStringConvertibleP", "white"]
+- ["SQ", "UIColor"]
+- ["SQ", ""]
+- !private ["SQ", "borderColor"]
+- !private ["SQ", "borderWidth"]
+- !private ["SQ", "cgColor"]
+- !private ["SQ", "cornerRadius"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "layer"]
+- ["SQ", "white"]
+- ["SH", "UIColor"]
+- ["SH", ""]
+- !private ["SH", "borderColor"]
+- !private ["SH", "borderWidth"]
+- !private ["SH", "cgColor"]
+- !private ["SH", "cornerRadius"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "layer"]
+- ["SH", "white"]
+- ["So8NSCodingP", "UIColor"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "borderColor"]
+- !private ["So8NSCodingP", "borderWidth"]
+- !private ["So8NSCodingP", "cgColor"]
+- !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
+- ["So8NSCodingP", "white"]
+- !private ["So9NSCopyingP", "cgColor"]
+- ["So9NSCopyingP", "white"]
+- !private ["So21NSItemProviderReadingP", "cgColor"]
+- ["So21NSItemProviderReadingP", "white"]
+- !private ["So21NSItemProviderWritingP", "cgColor"]
+- ["So21NSItemProviderWritingP", "white"]
+- ["So8NSObjectC", "CGFloat"]
+- ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "borderColor"]
+- ["So8NSObjectC", "borderWidth"]
+- !private ["So8NSObjectC", "cgColor"]
+- ["So8NSObjectC", "cornerRadius"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layer"]
+- ["So8NSObjectC", "white"]
+- ["So8NSObjectP", "UIColor"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "borderColor"]
+- !private ["So8NSObjectP", "borderWidth"]
+- !private ["So8NSObjectP", "cgColor"]
+- !private ["So8NSObjectP", "cornerRadius"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "layer"]
+- ["So8NSObjectP", "white"]
+- !private ["So14NSSecureCodingP", "borderColor"]
+- !private ["So14NSSecureCodingP", "borderWidth"]
+- !private ["So14NSSecureCodingP", "cgColor"]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
+- ["So14NSSecureCodingP", "white"]
+- ["13TodaySchedule11RoundUIViewC", "CGFloat"]
+- ["13TodaySchedule11RoundUIViewC", "UIColor"]
+- ["13TodaySchedule11RoundUIViewC", "borderColor"]
+- ["13TodaySchedule11RoundUIViewC", "borderWidth"]
+- ["13TodaySchedule11RoundUIViewC", "cornerRadius"]
+- ["13TodaySchedule11RoundUIViewC", "init"]
+- !private ["13TodaySchedule11RoundUIViewC", "layer"]
+- ["So29UIAccessibilityIdentificationP", "UIColor"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "borderColor"]
+- !private ["So29UIAccessibilityIdentificationP", "borderWidth"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- ["So12UIAppearanceP", "UIColor"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "borderColor"]
+- !private ["So12UIAppearanceP", "borderWidth"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "layer"]
+- ["So21UIAppearanceContainerP", "UIColor"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "borderColor"]
+- !private ["So21UIAppearanceContainerP", "borderWidth"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So7UIColorC", "cgColor"]
+- ["So7UIColorC", "white"]
+- ["So17UICoordinateSpaceP", "UIColor"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "borderColor"]
+- !private ["So17UICoordinateSpaceP", "borderWidth"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- ["So13UIDynamicItemP", "UIColor"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "borderColor"]
+- !private ["So13UIDynamicItemP", "borderWidth"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "layer"]
+- ["So18UIFocusEnvironmentP", "UIColor"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "borderColor"]
+- !private ["So18UIFocusEnvironmentP", "borderWidth"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- ["So11UIFocusItemP", "UIColor"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "borderColor"]
+- !private ["So11UIFocusItemP", "borderWidth"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "layer"]
+- ["So20UIFocusItemContainerP", "UIColor"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "borderColor"]
+- !private ["So20UIFocusItemContainerP", "borderWidth"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "layer"]
+- ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "borderColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "borderWidth"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- ["So11UIResponderC", "CGFloat"]
+- ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "borderColor"]
+- ["So11UIResponderC", "borderWidth"]
+- ["So11UIResponderC", "cornerRadius"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
+- ["So30UIResponderStandardEditActionsP", "UIColor"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "borderColor"]
+- !private ["So30UIResponderStandardEditActionsP", "borderWidth"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- ["So18UITraitEnvironmentP", "UIColor"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "borderColor"]
+- !private ["So18UITraitEnvironmentP", "borderWidth"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- ["So23UIUserActivityRestoringP", "UIColor"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "borderColor"]
+- !private ["So23UIUserActivityRestoringP", "borderWidth"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
+- ["So6UIViewC", "CGFloat"]
+- ["So6UIViewC", "UIColor"]
+- ["So6UIViewC", ""]
+- ["So6UIViewC", "borderColor"]
+- ["So6UIViewC", "borderWidth"]
+- ["So6UIViewC", "cornerRadius"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "layer"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "UIColor"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "borderColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "borderWidth"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
+- ["s26_ExpressibleByColorLiteralP", "white"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "borderColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "borderWidth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "white"]
+depends-nominal:
+- !private "So7CALayerC"
+- "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "So14NSSecureCodingP"
+- "13TodaySchedule11RoundUIViewC"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So7UIColorC"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s26_ExpressibleByColorLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/SwipeCellKit/SwipeCellKit.framework/Modules/SwipeCellKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/SwipeCellKit/SwipeCellKit.framework/Headers/SwipeCellKit-umbrella.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm+Sync.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/NSError+RLMSync.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMThreadSafeReference.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectBase_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMCollection_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncPermission.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncSubscription.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/SwipeCellKit/SwipeCellKit.framework/Headers/SwipeCellKit-Swift.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphonesimulator/SwipeCellKit/SwipeCellKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1e50b17101f40d7c2542c2fc348577a0"

@@ -36,19 +36,29 @@
                         <rect key="frame" x="280" y="19.5" width="25" height="25"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLJ-4h-SAA">
-                        <rect key="frame" x="98" y="23.5" width="87.5" height="21"/>
+                        <rect key="frame" x="102" y="23.5" width="88" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWX-Qm-DCi" userLabel="View Distance">
+                        <rect key="frame" x="94" y="32" width="4" height="4"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="OWg-CQ-Wvl"/>
+                            <constraint firstAttribute="width" constant="4" id="s6z-oS-eQc"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="sbi-bB-6jx" secondAttribute="trailing" constant="15" id="01w-Sd-5U7"/>
                     <constraint firstAttribute="trailing" secondItem="pdM-bx-UQi" secondAttribute="trailing" constant="10" id="5kb-GI-5MN"/>
+                    <constraint firstItem="sLJ-4h-SAA" firstAttribute="leading" secondItem="FWX-Qm-DCi" secondAttribute="trailing" constant="4" id="6CW-Ub-D9y"/>
                     <constraint firstItem="pdM-bx-UQi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="FM7-LC-SOc"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sLJ-4h-SAA" secondAttribute="trailing" constant="25" id="JsV-g1-crc"/>
+                    <constraint firstItem="FWX-Qm-DCi" firstAttribute="centerY" secondItem="Lys-fu-Sq9" secondAttribute="centerY" id="QB3-pX-vMm"/>
+                    <constraint firstItem="FWX-Qm-DCi" firstAttribute="leading" secondItem="Lys-fu-Sq9" secondAttribute="trailing" constant="4" id="WCA-s8-7ch"/>
                     <constraint firstItem="sbi-bB-6jx" firstAttribute="bottom" secondItem="sLJ-4h-SAA" secondAttribute="bottom" id="dYW-qD-bkz"/>
-                    <constraint firstItem="sLJ-4h-SAA" firstAttribute="leading" secondItem="Lys-fu-Sq9" secondAttribute="trailing" constant="8" id="g7B-hZ-47n"/>
                     <constraint firstItem="pdM-bx-UQi" firstAttribute="top" secondItem="Lys-fu-Sq9" secondAttribute="bottom" constant="3" id="o7I-6F-zlB"/>
                     <constraint firstItem="sLJ-4h-SAA" firstAttribute="bottom" secondItem="Lys-fu-Sq9" secondAttribute="bottom" id="pzx-Lh-i0O"/>
                     <constraint firstItem="Lys-fu-Sq9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="sM4-FK-DJw"/>
@@ -58,9 +68,11 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="checkImg" destination="sbi-bB-6jx" id="Kco-En-H6n"/>
+                <outlet property="circleView" destination="FWX-Qm-DCi" id="tqJ-aJ-R4m"/>
                 <outlet property="nameLbl" destination="sLJ-4h-SAA" id="5sC-lk-Kcr"/>
                 <outlet property="timeLbl" destination="Lys-fu-Sq9" id="wkE-f3-KMW"/>
             </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="130.43478260869566"/>
         </tableViewCell>
     </objects>
     <resources>

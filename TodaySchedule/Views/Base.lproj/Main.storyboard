@@ -156,21 +156,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvp-9C-ao6">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvp-9C-ao6" customClass="RoundUIView" customModule="TodaySchedule" customModuleProvider="target">
                                 <rect key="frame" x="40" y="260.5" width="295" height="166"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yr4-dq-Auf">
-                                        <rect key="frame" x="0.0" y="13" width="137" height="100"/>
+                                        <rect key="frame" x="8" y="8" width="137" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="137" id="L1q-hJ-eZq"/>
-                                            <constraint firstAttribute="height" constant="100" id="aKo-6f-BeH"/>
                                         </constraints>
                                         <date key="date" timeIntervalSinceReferenceDate="564892570.99160802">
                                             <!--2018-11-26 02:36:10 +0000-->
                                         </date>
                                     </datePicker>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FSR-F8-lLi">
-                                        <rect key="frame" x="145" y="13" width="150" height="100"/>
+                                        <rect key="frame" x="153" y="8" width="134" height="120"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -178,38 +177,71 @@
                                             <outlet property="delegate" destination="6vK-Xb-kSO" id="lS0-h5-2U3"/>
                                         </connections>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6z-ni-raX">
-                                        <rect key="frame" x="60" y="123" width="34" height="33"/>
-                                        <state key="normal" title="Save"/>
-                                        <connections>
-                                            <action selector="saveClick:" destination="6vK-Xb-kSO" eventType="touchUpInside" id="thD-Jn-K8h"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZV-YA-rc2">
-                                        <rect key="frame" x="187" y="123" width="48" height="33"/>
-                                        <state key="normal" title="Cancel"/>
-                                        <connections>
-                                            <action selector="cancelClick:" destination="6vK-Xb-kSO" eventType="touchUpInside" id="bQj-ui-Xsh"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-m9-9OO">
+                                        <rect key="frame" x="49" y="128" width="197" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZV-YA-rc2" customClass="RoundUIButton" customModule="TodaySchedule" customModuleProvider="target">
+                                                <rect key="frame" x="149" y="4" width="48" height="30"/>
+                                                <color key="backgroundColor" red="0.22352941176470587" green="0.24313725490196078" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelClick:" destination="6vK-Xb-kSO" eventType="touchUpInside" id="bQj-ui-Xsh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6z-ni-raX" customClass="RoundUIButton" customModule="TodaySchedule" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="4" width="48" height="30"/>
+                                                <color key="backgroundColor" red="0.22352941176470587" green="0.24313725490196078" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Save">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="saveClick:" destination="6vK-Xb-kSO" eventType="touchUpInside" id="thD-Jn-K8h"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="J6z-ni-raX" firstAttribute="leading" secondItem="M9h-m9-9OO" secondAttribute="leading" id="I0o-Pe-Q5Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="6ZV-YA-rc2" secondAttribute="trailing" id="Ni5-WW-HRe"/>
+                                            <constraint firstItem="J6z-ni-raX" firstAttribute="width" secondItem="6ZV-YA-rc2" secondAttribute="width" id="aFY-sl-wuc"/>
+                                            <constraint firstItem="6ZV-YA-rc2" firstAttribute="centerY" secondItem="M9h-m9-9OO" secondAttribute="centerY" id="gTh-QX-JIc"/>
+                                            <constraint firstItem="6ZV-YA-rc2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="J6z-ni-raX" secondAttribute="trailing" constant="8" symbolic="YES" id="n01-wX-PdQ"/>
+                                            <constraint firstItem="J6z-ni-raX" firstAttribute="centerY" secondItem="M9h-m9-9OO" secondAttribute="centerY" id="n9O-gI-rBq"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="6ZV-YA-rc2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="J6z-ni-raX" secondAttribute="trailing" constant="8" symbolic="YES" id="0eb-4X-zog"/>
-                                    <constraint firstItem="6ZV-YA-rc2" firstAttribute="bottom" secondItem="J6z-ni-raX" secondAttribute="bottom" id="6fI-1Z-E0a"/>
-                                    <constraint firstItem="yr4-dq-Auf" firstAttribute="centerY" secondItem="Pvp-9C-ao6" secondAttribute="centerY" constant="-20" id="9kW-YE-FbJ"/>
+                                    <constraint firstItem="M9h-m9-9OO" firstAttribute="centerX" secondItem="Pvp-9C-ao6" secondAttribute="centerX" id="4jN-vG-gfM"/>
+                                    <constraint firstAttribute="bottom" secondItem="M9h-m9-9OO" secondAttribute="bottom" id="82M-X3-Iub"/>
                                     <constraint firstItem="FSR-F8-lLi" firstAttribute="bottom" secondItem="yr4-dq-Auf" secondAttribute="bottom" id="AIa-V9-IS0"/>
-                                    <constraint firstItem="6ZV-YA-rc2" firstAttribute="top" secondItem="J6z-ni-raX" secondAttribute="top" id="AOS-Il-3pd"/>
-                                    <constraint firstAttribute="bottom" secondItem="J6z-ni-raX" secondAttribute="bottom" constant="10" id="B7a-F7-WjD"/>
+                                    <constraint firstItem="M9h-m9-9OO" firstAttribute="top" secondItem="yr4-dq-Auf" secondAttribute="bottom" id="B0D-Yl-1bi"/>
                                     <constraint firstAttribute="width" secondItem="Pvp-9C-ao6" secondAttribute="height" multiplier="16:9" id="LhO-mV-gnN"/>
                                     <constraint firstItem="FSR-F8-lLi" firstAttribute="leading" secondItem="yr4-dq-Auf" secondAttribute="trailing" constant="8" id="MOn-oV-2CJ"/>
-                                    <constraint firstItem="J6z-ni-raX" firstAttribute="top" secondItem="yr4-dq-Auf" secondAttribute="bottom" constant="10" id="OUd-L7-nPd"/>
-                                    <constraint firstAttribute="trailing" secondItem="6ZV-YA-rc2" secondAttribute="trailing" constant="60" id="dBh-A2-vCL"/>
+                                    <constraint firstItem="M9h-m9-9OO" firstAttribute="width" secondItem="Pvp-9C-ao6" secondAttribute="width" multiplier="2:3" id="Tfy-th-rBX"/>
                                     <constraint firstItem="FSR-F8-lLi" firstAttribute="top" secondItem="yr4-dq-Auf" secondAttribute="top" id="hef-ot-IbY"/>
-                                    <constraint firstItem="yr4-dq-Auf" firstAttribute="leading" secondItem="Pvp-9C-ao6" secondAttribute="leading" id="j6v-vN-frA"/>
-                                    <constraint firstAttribute="trailing" secondItem="FSR-F8-lLi" secondAttribute="trailing" id="wvH-xm-NQ7"/>
-                                    <constraint firstItem="J6z-ni-raX" firstAttribute="leading" secondItem="Pvp-9C-ao6" secondAttribute="leading" constant="60" id="wvi-1t-yq9"/>
+                                    <constraint firstItem="yr4-dq-Auf" firstAttribute="leading" secondItem="Pvp-9C-ao6" secondAttribute="leading" constant="8" id="j6v-vN-frA"/>
+                                    <constraint firstItem="yr4-dq-Auf" firstAttribute="top" secondItem="Pvp-9C-ao6" secondAttribute="top" constant="8" id="jwD-il-K1w"/>
+                                    <constraint firstItem="yr4-dq-Auf" firstAttribute="height" secondItem="Pvp-9C-ao6" secondAttribute="height" multiplier="120:166" id="pNc-e6-KH2"/>
+                                    <constraint firstAttribute="trailing" secondItem="FSR-F8-lLi" secondAttribute="trailing" constant="8" id="wvH-xm-NQ7"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.33000000000000002" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -228,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcn-QV-XFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1215" y="-300"/>
+            <point key="canvasLocation" x="1213.5999999999999" y="-300"/>
         </scene>
         <!--Add Goal View Controller-->
         <scene sceneID="8pq-UR-qvV">
@@ -238,44 +270,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQ6-xC-WV7">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQ6-xC-WV7" customClass="RoundUIView" customModule="TodaySchedule" customModuleProvider="target">
                                 <rect key="frame" x="40" y="260.5" width="295" height="166"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eC1-9l-CfM">
-                                        <rect key="frame" x="0.0" y="13" width="295" height="100"/>
+                                        <rect key="frame" x="8" y="8" width="279" height="120"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-NA-L8Q">
-                                        <rect key="frame" x="60" y="126" width="34" height="30"/>
-                                        <state key="normal" title="Save"/>
-                                        <connections>
-                                            <action selector="saveClick:" destination="1pW-ZW-cQP" eventType="touchUpInside" id="oJW-wl-PqN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D21-oS-vE0">
-                                        <rect key="frame" x="187" y="126" width="48" height="30"/>
-                                        <state key="normal" title="Cancel"/>
-                                        <connections>
-                                            <action selector="cancelClick:" destination="1pW-ZW-cQP" eventType="touchUpInside" id="Dyi-GB-6hE"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGS-Xs-mXI">
+                                        <rect key="frame" x="49" y="128" width="197" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-NA-L8Q" customClass="RoundUIButton" customModule="TodaySchedule" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="4" width="48" height="30"/>
+                                                <color key="backgroundColor" red="0.22352941176470587" green="0.24313725490196078" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Save">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="saveClick:" destination="1pW-ZW-cQP" eventType="touchUpInside" id="oJW-wl-PqN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D21-oS-vE0" customClass="RoundUIButton" customModule="TodaySchedule" customModuleProvider="target">
+                                                <rect key="frame" x="149" y="4" width="48" height="30"/>
+                                                <color key="backgroundColor" red="0.22352941176470587" green="0.24313725490196078" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelClick:" destination="1pW-ZW-cQP" eventType="touchUpInside" id="Dyi-GB-6hE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="vH6-NA-L8Q" firstAttribute="centerY" secondItem="BGS-Xs-mXI" secondAttribute="centerY" id="9z9-LL-Ofj"/>
+                                            <constraint firstItem="D21-oS-vE0" firstAttribute="centerY" secondItem="BGS-Xs-mXI" secondAttribute="centerY" id="GpZ-0i-RVx"/>
+                                            <constraint firstAttribute="trailing" secondItem="D21-oS-vE0" secondAttribute="trailing" id="Mmh-fa-Gd2"/>
+                                            <constraint firstItem="vH6-NA-L8Q" firstAttribute="leading" secondItem="BGS-Xs-mXI" secondAttribute="leading" id="TU4-qg-OmG"/>
+                                            <constraint firstItem="vH6-NA-L8Q" firstAttribute="width" secondItem="D21-oS-vE0" secondAttribute="width" id="wH7-6d-jDy"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="D21-oS-vE0" firstAttribute="top" secondItem="vH6-NA-L8Q" secondAttribute="top" id="0xf-Si-dNL"/>
-                                    <constraint firstItem="vH6-NA-L8Q" firstAttribute="leading" secondItem="NQ6-xC-WV7" secondAttribute="leading" constant="60" id="JXs-Yr-pyC"/>
-                                    <constraint firstItem="vH6-NA-L8Q" firstAttribute="top" secondItem="eC1-9l-CfM" secondAttribute="bottom" constant="13" id="Qyy-0j-6aJ"/>
+                                    <constraint firstItem="BGS-Xs-mXI" firstAttribute="centerX" secondItem="NQ6-xC-WV7" secondAttribute="centerX" id="6J1-xs-Ntw"/>
+                                    <constraint firstItem="BGS-Xs-mXI" firstAttribute="width" secondItem="NQ6-xC-WV7" secondAttribute="width" multiplier="2:3" id="HwA-RN-icE"/>
+                                    <constraint firstItem="eC1-9l-CfM" firstAttribute="height" secondItem="NQ6-xC-WV7" secondAttribute="height" multiplier="120:166" id="Jzk-uH-6GB"/>
+                                    <constraint firstAttribute="bottom" secondItem="BGS-Xs-mXI" secondAttribute="bottom" id="Mr4-Yt-OZM"/>
                                     <constraint firstAttribute="width" secondItem="NQ6-xC-WV7" secondAttribute="height" multiplier="16:9" id="W29-CQ-THD"/>
-                                    <constraint firstAttribute="trailing" secondItem="D21-oS-vE0" secondAttribute="trailing" constant="60" id="WWv-a6-cry"/>
-                                    <constraint firstAttribute="bottom" secondItem="vH6-NA-L8Q" secondAttribute="bottom" constant="10" id="cDa-Le-FDy"/>
-                                    <constraint firstAttribute="trailing" secondItem="eC1-9l-CfM" secondAttribute="trailing" id="cWr-3A-DON"/>
-                                    <constraint firstItem="eC1-9l-CfM" firstAttribute="leading" secondItem="NQ6-xC-WV7" secondAttribute="leading" id="ged-R6-zg6"/>
-                                    <constraint firstItem="D21-oS-vE0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vH6-NA-L8Q" secondAttribute="trailing" constant="8" symbolic="YES" id="h7W-H8-JAC"/>
-                                    <constraint firstItem="D21-oS-vE0" firstAttribute="bottom" secondItem="vH6-NA-L8Q" secondAttribute="bottom" id="lMr-c0-DpF"/>
-                                    <constraint firstItem="eC1-9l-CfM" firstAttribute="top" secondItem="NQ6-xC-WV7" secondAttribute="top" constant="13" id="y5w-DP-qc0"/>
+                                    <constraint firstAttribute="trailing" secondItem="eC1-9l-CfM" secondAttribute="trailing" constant="8" id="cWr-3A-DON"/>
+                                    <constraint firstItem="eC1-9l-CfM" firstAttribute="leading" secondItem="NQ6-xC-WV7" secondAttribute="leading" constant="8" id="ged-R6-zg6"/>
+                                    <constraint firstItem="BGS-Xs-mXI" firstAttribute="top" secondItem="eC1-9l-CfM" secondAttribute="bottom" id="lZl-h9-NmO"/>
+                                    <constraint firstItem="eC1-9l-CfM" firstAttribute="top" secondItem="NQ6-xC-WV7" secondAttribute="top" constant="8" id="y5w-DP-qc0"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
