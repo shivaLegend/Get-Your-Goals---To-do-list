@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCell" id="KGk-i7-Jjw" customClass="ToDoTableViewCell" customModule="TodaySchedule" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lys-fu-Sq9">
+                        <rect key="frame" x="20" y="23.5" width="45.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLJ-4h-SAA">
+                        <rect key="frame" x="70" y="23.5" width="87.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdM-bx-UQi">
+                        <rect key="frame" x="20" y="47.5" width="280" height="2"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="JSG-oC-ptQ"/>
+                        </constraints>
+                    </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="sbi-bB-6jx">
+                        <rect key="frame" x="275" y="19.5" width="25" height="25"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="sbi-bB-6jx" secondAttribute="trailing" constant="20" id="01w-Sd-5U7"/>
+                    <constraint firstItem="sLJ-4h-SAA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="70" id="1W6-hI-nNb"/>
+                    <constraint firstAttribute="trailing" secondItem="pdM-bx-UQi" secondAttribute="trailing" constant="20" id="5kb-GI-5MN"/>
+                    <constraint firstItem="pdM-bx-UQi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="FM7-LC-SOc"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sLJ-4h-SAA" secondAttribute="trailing" constant="20" id="JsV-g1-crc"/>
+                    <constraint firstItem="sbi-bB-6jx" firstAttribute="bottom" secondItem="sLJ-4h-SAA" secondAttribute="bottom" id="dYW-qD-bkz"/>
+                    <constraint firstItem="pdM-bx-UQi" firstAttribute="top" secondItem="Lys-fu-Sq9" secondAttribute="bottom" constant="3" id="o7I-6F-zlB"/>
+                    <constraint firstItem="sLJ-4h-SAA" firstAttribute="bottom" secondItem="Lys-fu-Sq9" secondAttribute="bottom" id="pzx-Lh-i0O"/>
+                    <constraint firstItem="Lys-fu-Sq9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="sM4-FK-DJw"/>
+                    <constraint firstAttribute="bottom" secondItem="pdM-bx-UQi" secondAttribute="bottom" id="syl-MI-BFq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkImg" destination="sbi-bB-6jx" id="Kco-En-H6n"/>
+                <outlet property="nameLbl" destination="sLJ-4h-SAA" id="5sC-lk-Kcr"/>
+                <outlet property="timeLbl" destination="Lys-fu-Sq9" id="wkE-f3-KMW"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" width="25" height="25"/>
+    </resources>
+</document>
