@@ -23,6 +23,7 @@ class AddToDoViewController: UIViewController {
       toDoTextView.text = "You can do it !"
     toDoTextView.textColor = UIColor.lightGray
     toDoTextView.delegate = self
+    
     }
     
   @IBAction func cancelClick(_ sender: Any) {

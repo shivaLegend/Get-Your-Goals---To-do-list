@@ -60,6 +60,27 @@ class ViewController: UIViewController {
 //    goalsTableView.reloadData()
   }
   
+  func updateClock(date: Date) -> String{
+    let calendar = Calendar.current
+    let components = calendar.dateComponents([.hour, .minute], from: date)
+
+    //if statement if components hour > 12 then subtract 12 if not then leave it alone.
+    var hour = components.hour! > 12 ? components.hour! - 12 : components.hour
+    
+    //this is an if statement if hour is = to 0 then 12 else it is equal to hour.
+    hour = hour == 0 ? 12 : hour
+    guard let finalHour = hour else {return "0"}
+    guard let finalMinutes = components.minute else {return "0"}
+    let hourString = finalHour > 9 ? "\(String(describing: finalHour))" : "0\(String(describing: finalHour))"
+    let minutes = finalMinutes > 9 ? "\(String(describing: finalMinutes))" : "0\(String(describing: finalMinutes))"
+    
+    //this is an if statement if am is > then am is pm if < than it is am.
+    let am = components.hour! > 12 ? "PM" : "AM"
+    
+    return "\(hourString):\(minutes) \(am)"
+    
+  }
+  
   @IBAction func addScheduleClickButton(_ sender: Any) {
   }
   
@@ -115,35 +136,36 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     //take the time
     let date = toDoList[indexPath.row].time
-    let calendar = Calendar.current
-    let comp = calendar.dateComponents([.hour, .minute], from: date)
+//    let calendar = Calendar.current
+//    let comp = calendar.dateComponents([.hour, .minute], from: date)
+//
+//    let hourInt = comp.hour
+//    let minuteInt = comp.minute
+//    var hourString : String!
+//    var minuteString: String!
+//    if hourInt! < 10 {
+//      hourString = String(describing: comp.hour!)
+//      hourString = "0" + hourString
+//    } else {
+//      hourString = String(describing: comp.hour!)
+//    }
+//
+//    if minuteInt! < 10 {
+//      minuteString = String(describing: comp.minute!)
+//      minuteString = "0" + minuteString
+//    } else {
+//      minuteString = String(describing: comp.minute!)
+//    }
+//
+//    if hourInt! <= 12 {
+//      minuteString = minuteString + " AM"
+//    } else {
+//      minuteString = minuteString + " PM"
+//    }
     
-    let hourInt = comp.hour
-    let minuteInt = comp.minute
-    var hourString : String!
-    var minuteString: String!
-    if hourInt! < 10 {
-      hourString = String(describing: comp.hour!)
-      hourString = "0" + hourString
-    } else {
-      hourString = String(describing: comp.hour!)
-    }
-    
-    if minuteInt! < 10 {
-      minuteString = String(describing: comp.minute!)
-      minuteString = "0" + minuteString
-    } else {
-      minuteString = String(describing: comp.minute!)
-    }
-    
-    if hourInt! <= 12 {
-      minuteString = minuteString + " AM"
-    } else {
-      minuteString = minuteString + " PM"
-    }
-    
-    cell.timeLbl.text = hourString + ":" + minuteString
-    
+//    cell.timeLbl.text = hourString + ":" + minuteString
+    print(updateClock(date: date))
+    cell.timeLbl.text = updateClock(date: date)
     return cell
   }
   

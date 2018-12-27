@@ -17,10 +17,10 @@ provides-dynamic-lookup:
 - "toDoTableView"
 - "viewDidLoad"
 depends-top-level:
-- !private "+"
+- !private "-"
 - !private "<"
-- !private "<="
 - !private "=="
+- !private ">"
 - !private "??"
 - !private "Array"
 - "AssignmentPrecedence"
@@ -28,6 +28,7 @@ depends-top-level:
 - "CGFloat"
 - !private "Calendar"
 - "CastingPrecedence"
+- "Date"
 - !private "FloatLiteralType"
 - "Goal"
 - !private "GoalTableViewCell"
@@ -41,12 +42,13 @@ depends-top-level:
 - !private "NotificationCenter"
 - "Realm"
 - "Results"
-- !private "String"
+- "String"
 - !private "StringLiteralType"
 - "SwipeAction"
 - "SwipeActionsOrientation"
 - "SwipeTableOptions"
 - "SwipeTableViewCellDelegate"
+- "TernaryPrecedence"
 - "ToDo"
 - !private "ToDoTableViewCell"
 - !private "UIAlertAction"
@@ -158,6 +160,7 @@ depends-member:
 - !private ["s7CVarArgP", "titleLbl"]
 - !private ["s7CVarArgP", "toDoList"]
 - !private ["s7CVarArgP", "toDoTableView"]
+- !private ["s7CVarArgP", "updateClock"]
 - !private ["s7CVarArgP", "updateGoals"]
 - !private ["s7CVarArgP", "updateModel"]
 - !private ["s7CVarArgP", "viewDidLoad"]
@@ -254,6 +257,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "titleLbl"]
 - !private ["s28CustomDebugStringConvertibleP", "toDoList"]
 - !private ["s28CustomDebugStringConvertibleP", "toDoTableView"]
+- !private ["s28CustomDebugStringConvertibleP", "updateClock"]
 - !private ["s28CustomDebugStringConvertibleP", "updateGoals"]
 - !private ["s28CustomDebugStringConvertibleP", "updateModel"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
@@ -358,6 +362,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "titleLbl"]
 - !private ["s23CustomStringConvertibleP", "toDoList"]
 - !private ["s23CustomStringConvertibleP", "toDoTableView"]
+- !private ["s23CustomStringConvertibleP", "updateClock"]
 - !private ["s23CustomStringConvertibleP", "updateGoals"]
 - !private ["s23CustomStringConvertibleP", "updateModel"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
@@ -477,6 +482,7 @@ depends-member:
 - !private ["SQ", "titleLbl"]
 - !private ["SQ", "toDoList"]
 - !private ["SQ", "toDoTableView"]
+- !private ["SQ", "updateClock"]
 - !private ["SQ", "updateGoals"]
 - !private ["SQ", "updateModel"]
 - !private ["SQ", "viewDidLoad"]
@@ -582,6 +588,7 @@ depends-member:
 - !private ["SH", "titleLbl"]
 - !private ["SH", "toDoList"]
 - !private ["SH", "toDoTableView"]
+- !private ["SH", "updateClock"]
 - !private ["SH", "updateGoals"]
 - !private ["SH", "updateModel"]
 - !private ["SH", "viewDidLoad"]
@@ -668,6 +675,7 @@ depends-member:
 - !private ["So8NSCodingP", "titleLbl"]
 - !private ["So8NSCodingP", "toDoList"]
 - !private ["So8NSCodingP", "toDoTableView"]
+- !private ["So8NSCodingP", "updateClock"]
 - !private ["So8NSCodingP", "updateGoals"]
 - !private ["So8NSCodingP", "updateModel"]
 - !private ["So8NSCodingP", "viewDidLoad"]
@@ -726,6 +734,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "toDoList"]
 - !private ["So26NSExtensionRequestHandlingP", "toDoTableView"]
+- !private ["So26NSExtensionRequestHandlingP", "updateClock"]
 - !private ["So26NSExtensionRequestHandlingP", "updateGoals"]
 - !private ["So26NSExtensionRequestHandlingP", "updateModel"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
@@ -742,6 +751,7 @@ depends-member:
 - !private ["So14NSNotificationC", "Name"]
 - ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "Calendar"]
+- ["So8NSObjectC", "Date"]
 - ["So8NSObjectC", "Goal"]
 - !private ["So8NSObjectC", "GoalTableViewCell"]
 - ["So8NSObjectC", "IndexPath"]
@@ -754,7 +764,7 @@ depends-member:
 - !private ["So8NSObjectC", "NotificationCenter"]
 - ["So8NSObjectC", "Realm"]
 - ["So8NSObjectC", "Results"]
-- !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "SwipeAction"]
 - ["So8NSObjectC", "SwipeActionsOrientation"]
 - ["So8NSObjectC", "SwipeTableOptions"]
@@ -822,6 +832,7 @@ depends-member:
 - !private ["So8NSObjectC", "titleLbl"]
 - ["So8NSObjectC", "toDoList"]
 - ["So8NSObjectC", "toDoTableView"]
+- ["So8NSObjectC", "updateClock"]
 - ["So8NSObjectC", "updateGoals"]
 - ["So8NSObjectC", "updateModel"]
 - ["So8NSObjectC", "viewDidLoad"]
@@ -897,6 +908,7 @@ depends-member:
 - !private ["So8NSObjectP", "titleLbl"]
 - !private ["So8NSObjectP", "toDoList"]
 - !private ["So8NSObjectP", "toDoTableView"]
+- !private ["So8NSObjectP", "updateClock"]
 - !private ["So8NSObjectP", "updateGoals"]
 - !private ["So8NSObjectP", "updateModel"]
 - !private ["So8NSObjectP", "viewDidLoad"]
@@ -1051,6 +1063,7 @@ depends-member:
 - ["12SwipeCellKit0a9TableViewB8DelegateP", "tableView"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "toDoList"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "toDoTableView"]
+- !private ["12SwipeCellKit0a9TableViewB8DelegateP", "updateClock"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "updateGoals"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "updateModel"]
 - ["12SwipeCellKit0a9TableViewB8DelegateP", "viewForZooming"]
@@ -1162,6 +1175,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "titleLbl"]
 - !private ["So21UIAppearanceContainerP", "toDoList"]
 - !private ["So21UIAppearanceContainerP", "toDoTableView"]
+- !private ["So21UIAppearanceContainerP", "updateClock"]
 - !private ["So21UIAppearanceContainerP", "updateGoals"]
 - !private ["So21UIAppearanceContainerP", "updateModel"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
@@ -1219,6 +1233,7 @@ depends-member:
 - ["So18UIContentContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "toDoList"]
 - !private ["So18UIContentContainerP", "toDoTableView"]
+- !private ["So18UIContentContainerP", "updateClock"]
 - !private ["So18UIContentContainerP", "updateGoals"]
 - !private ["So18UIContentContainerP", "updateModel"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
@@ -1314,6 +1329,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "titleLbl"]
 - !private ["So18UIFocusEnvironmentP", "toDoList"]
 - !private ["So18UIFocusEnvironmentP", "toDoTableView"]
+- !private ["So18UIFocusEnvironmentP", "updateClock"]
 - !private ["So18UIFocusEnvironmentP", "updateGoals"]
 - !private ["So18UIFocusEnvironmentP", "updateModel"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
@@ -1415,6 +1431,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "titleLbl"]
 - !private ["So30UIPasteConfigurationSupportingP", "toDoList"]
 - !private ["So30UIPasteConfigurationSupportingP", "toDoTableView"]
+- !private ["So30UIPasteConfigurationSupportingP", "updateClock"]
 - !private ["So30UIPasteConfigurationSupportingP", "updateGoals"]
 - !private ["So30UIPasteConfigurationSupportingP", "updateModel"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
@@ -1423,6 +1440,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "visibleRect"]
 - ["So11UIResponderC", "CGFloat"]
 - !private ["So11UIResponderC", "Calendar"]
+- ["So11UIResponderC", "Date"]
 - ["So11UIResponderC", "Goal"]
 - !private ["So11UIResponderC", "GoalTableViewCell"]
 - ["So11UIResponderC", "IndexPath"]
@@ -1434,7 +1452,7 @@ depends-member:
 - !private ["So11UIResponderC", "NotificationCenter"]
 - ["So11UIResponderC", "Realm"]
 - ["So11UIResponderC", "Results"]
-- !private ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "SwipeAction"]
 - ["So11UIResponderC", "SwipeActionsOrientation"]
 - ["So11UIResponderC", "SwipeTableOptions"]
@@ -1494,6 +1512,7 @@ depends-member:
 - !private ["So11UIResponderC", "titleLbl"]
 - ["So11UIResponderC", "toDoList"]
 - ["So11UIResponderC", "toDoTableView"]
+- ["So11UIResponderC", "updateClock"]
 - ["So11UIResponderC", "updateGoals"]
 - ["So11UIResponderC", "updateModel"]
 - ["So11UIResponderC", "viewDidLoad"]
@@ -1560,6 +1579,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "titleLbl"]
 - !private ["So30UIResponderStandardEditActionsP", "toDoList"]
 - !private ["So30UIResponderStandardEditActionsP", "toDoTableView"]
+- !private ["So30UIResponderStandardEditActionsP", "updateClock"]
 - !private ["So30UIResponderStandardEditActionsP", "updateGoals"]
 - !private ["So30UIResponderStandardEditActionsP", "updateModel"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
@@ -1618,6 +1638,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "toDoList"]
 - !private ["So20UIScrollViewDelegateP", "toDoTableView"]
+- !private ["So20UIScrollViewDelegateP", "updateClock"]
 - !private ["So20UIScrollViewDelegateP", "updateGoals"]
 - !private ["So20UIScrollViewDelegateP", "updateModel"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
@@ -1681,6 +1702,7 @@ depends-member:
 - ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "toDoList"]
 - !private ["So16UIStateRestoringP", "toDoTableView"]
+- !private ["So16UIStateRestoringP", "updateClock"]
 - !private ["So16UIStateRestoringP", "updateGoals"]
 - !private ["So16UIStateRestoringP", "updateModel"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
@@ -1743,6 +1765,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "toDoList"]
 - !private ["So21UITableViewDataSourceP", "toDoTableView"]
+- !private ["So21UITableViewDataSourceP", "updateClock"]
 - !private ["So21UITableViewDataSourceP", "updateGoals"]
 - !private ["So21UITableViewDataSourceP", "updateModel"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
@@ -1795,6 +1818,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "toDoList"]
 - !private ["So19UITableViewDelegateP", "toDoTableView"]
+- !private ["So19UITableViewDelegateP", "updateClock"]
 - !private ["So19UITableViewDelegateP", "updateGoals"]
 - !private ["So19UITableViewDelegateP", "updateModel"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
@@ -1860,6 +1884,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "titleLbl"]
 - !private ["So18UITraitEnvironmentP", "toDoList"]
 - !private ["So18UITraitEnvironmentP", "toDoTableView"]
+- !private ["So18UITraitEnvironmentP", "updateClock"]
 - !private ["So18UITraitEnvironmentP", "updateGoals"]
 - !private ["So18UITraitEnvironmentP", "updateModel"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
@@ -1926,6 +1951,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "titleLbl"]
 - !private ["So23UIUserActivityRestoringP", "toDoList"]
 - !private ["So23UIUserActivityRestoringP", "toDoTableView"]
+- !private ["So23UIUserActivityRestoringP", "updateClock"]
 - !private ["So23UIUserActivityRestoringP", "updateGoals"]
 - !private ["So23UIUserActivityRestoringP", "updateModel"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
@@ -1945,6 +1971,7 @@ depends-member:
 - !private ["So6UIViewC", "titleLbl"]
 - ["So16UIViewControllerC", "CGFloat"]
 - !private ["So16UIViewControllerC", "Calendar"]
+- ["So16UIViewControllerC", "Date"]
 - ["So16UIViewControllerC", "Goal"]
 - !private ["So16UIViewControllerC", "GoalTableViewCell"]
 - ["So16UIViewControllerC", "IndexPath"]
@@ -1956,7 +1983,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "NotificationCenter"]
 - ["So16UIViewControllerC", "Realm"]
 - ["So16UIViewControllerC", "Results"]
-- !private ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "SwipeAction"]
 - ["So16UIViewControllerC", "SwipeActionsOrientation"]
 - ["So16UIViewControllerC", "SwipeTableOptions"]
@@ -2007,6 +2034,7 @@ depends-member:
 - ["So16UIViewControllerC", "tableView"]
 - ["So16UIViewControllerC", "toDoList"]
 - ["So16UIViewControllerC", "toDoTableView"]
+- ["So16UIViewControllerC", "updateClock"]
 - ["So16UIViewControllerC", "updateGoals"]
 - ["So16UIViewControllerC", "updateModel"]
 - ["So16UIViewControllerC", "viewDidLoad"]
@@ -2015,6 +2043,7 @@ depends-member:
 - ["So16UIViewControllerC", "visibleRect"]
 - ["13TodaySchedule14ViewControllerC", "CGFloat"]
 - !private ["13TodaySchedule14ViewControllerC", "Calendar"]
+- ["13TodaySchedule14ViewControllerC", "Date"]
 - ["13TodaySchedule14ViewControllerC", "Goal"]
 - !private ["13TodaySchedule14ViewControllerC", "GoalTableViewCell"]
 - ["13TodaySchedule14ViewControllerC", "IndexPath"]
@@ -2026,7 +2055,7 @@ depends-member:
 - !private ["13TodaySchedule14ViewControllerC", "NotificationCenter"]
 - ["13TodaySchedule14ViewControllerC", "Realm"]
 - ["13TodaySchedule14ViewControllerC", "Results"]
-- !private ["13TodaySchedule14ViewControllerC", "String"]
+- ["13TodaySchedule14ViewControllerC", "String"]
 - ["13TodaySchedule14ViewControllerC", "SwipeAction"]
 - ["13TodaySchedule14ViewControllerC", "SwipeActionsOrientation"]
 - ["13TodaySchedule14ViewControllerC", "SwipeTableOptions"]
@@ -2075,6 +2104,7 @@ depends-member:
 - ["13TodaySchedule14ViewControllerC", "tableView"]
 - ["13TodaySchedule14ViewControllerC", "toDoList"]
 - ["13TodaySchedule14ViewControllerC", "toDoTableView"]
+- ["13TodaySchedule14ViewControllerC", "updateClock"]
 - ["13TodaySchedule14ViewControllerC", "updateGoals"]
 - ["13TodaySchedule14ViewControllerC", "updateModel"]
 - ["13TodaySchedule14ViewControllerC", "viewDidLoad"]
@@ -2175,6 +2205,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLbl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "toDoList"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "toDoTableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateClock"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateGoals"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateModel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
@@ -2416,4 +2447,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d72f6e5048337e24b1118cc47dd95d02"
+interface-hash: "d9b3df8b34d461d6a0657ab0f8748fdd"
