@@ -21,6 +21,7 @@
 		CF48D47B21CBDF89001A6638 /* GoalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF48D47921CBDF89001A6638 /* GoalTableViewCell.xib */; };
 		CF48D47D21CBE51E001A6638 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48D47C21CBE51E001A6638 /* Goal.swift */; };
 		CF48D47F21CBF9A7001A6638 /* AddGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48D47E21CBF9A7001A6638 /* AddGoalViewController.swift */; };
+		CF6D028621D622C100B6585C /* DayMonthString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D028521D622C100B6585C /* DayMonthString.swift */; };
 		CF77A7F721D52333009A4745 /* RoundUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF77A7F621D52333009A4745 /* RoundUIButton.swift */; };
 		CFAECB9221C3451200CD798A /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAECB9121C3451200CD798A /* ToDo.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		CF48D47921CBDF89001A6638 /* GoalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalTableViewCell.xib; sourceTree = "<group>"; };
 		CF48D47C21CBE51E001A6638 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		CF48D47E21CBF9A7001A6638 /* AddGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewController.swift; sourceTree = "<group>"; };
+		CF6D028521D622C100B6585C /* DayMonthString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayMonthString.swift; sourceTree = "<group>"; };
 		CF77A7F621D52333009A4745 /* RoundUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUIButton.swift; sourceTree = "<group>"; };
 		CFAECB9121C3451200CD798A /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		D243CB6625286CA89F8BAEF3 /* Pods_TodaySchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodaySchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				CF0F533421AAA1F5000B7648 /* AppDelegate.swift */,
+				CF6D028421D6229300B6585C /* Extensions */,
 				CFAECB9021C344D300CD798A /* Models */,
 				CF0F534621AAF40D000B7648 /* Views */,
 				CF11A7A521AB92AE007E3500 /* Controllers */,
@@ -139,6 +142,14 @@
 				CF151EA921D51D4200FC90CF /* RoundUIView.swift */,
 			);
 			path = "Custom UIView";
+			sourceTree = "<group>";
+		};
+		CF6D028421D6229300B6585C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D028521D622C100B6585C /* DayMonthString.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CF77A7F521D52323009A4745 /* Custom UIButton */ = {
@@ -296,6 +307,7 @@
 				CF11A7A721AB92E3007E3500 /* AddToDoViewController.swift in Sources */,
 				CF48D47F21CBF9A7001A6638 /* AddGoalViewController.swift in Sources */,
 				CFAECB9221C3451200CD798A /* ToDo.swift in Sources */,
+				CF6D028621D622C100B6585C /* DayMonthString.swift in Sources */,
 				CF0F534921AAF45F000B7648 /* ToDoTableViewCell.swift in Sources */,
 				CF0F533721AAA1F5000B7648 /* ViewController.swift in Sources */,
 				CF151EAA21D51D4200FC90CF /* RoundUIView.swift in Sources */,

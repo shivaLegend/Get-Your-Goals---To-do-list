@@ -315,7 +315,9 @@ SWIFT_CLASS("_TtC13TodaySchedule14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified toDoTableView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified goalsTableView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified monthDayLbl;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified addGoalButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dayLbl;
 - (void)viewDidLoad;
 - (void)loadList;
 - (void)loadGoal;

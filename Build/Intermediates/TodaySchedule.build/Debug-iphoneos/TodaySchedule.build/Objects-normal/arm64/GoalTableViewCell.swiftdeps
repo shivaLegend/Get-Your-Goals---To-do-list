@@ -43,6 +43,7 @@ depends-member:
 - ["13TodaySchedule17GoalTableViewCellC", "Bool"]
 - ["13TodaySchedule17GoalTableViewCellC", "UILabel"]
 - ["13TodaySchedule17GoalTableViewCellC", "awakeFromNib"]
+- ["13TodaySchedule17GoalTableViewCellC", "deinit"]
 - ["13TodaySchedule17GoalTableViewCellC", "init"]
 - ["13TodaySchedule17GoalTableViewCellC", "setSelected"]
 - ["13TodaySchedule17GoalTableViewCellC", "titleLbl"]

@@ -24,6 +24,9 @@ class AddGoalViewController: UIViewController {
       goalTextView.layer.borderColor = borderColor.cgColor
       goalTextView.layer.borderWidth = 1.0
       goalTextView.layer.cornerRadius = 5.0
+      
+      //add padding text view
+      goalTextView.textContainerInset = UIEdgeInsets(top: 8,left: 5,bottom: 8,right: 5)
     }
     
   @IBAction func cancelClick(_ sender: Any) {

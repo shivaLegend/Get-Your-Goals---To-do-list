@@ -17,7 +17,9 @@ class ViewController: UIViewController {
   @IBOutlet weak var toDoTableView: UITableView!
   @IBOutlet weak var goalsTableView: UITableView!
   
+  @IBOutlet weak var monthDayLbl: UILabel!
   @IBOutlet weak var addGoalButton: UIButton!
+  @IBOutlet weak var dayLbl: UILabel!
   var realm = try! Realm()
 //  var toDoList: Results<ToDo>?
   var goalList: Results<Goal>?
@@ -33,6 +35,17 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    //get current date
+    let date = Date()
+    let calendar = Calendar.current
+    let components = calendar.dateComponents([.year, .month, .day], from: date)
+    guard let day = date.dayOfWeek() else {return}
+    guard let dayNumber = components.day else {return}
+    dayLbl.text = day
+    monthDayLbl.text = date.month + " " + String(dayNumber)
+    
+    // -------------------
+    
 //    toDoList = realm.objects(ToDo.self)
     goalList = realm.objects(Goal.self)
     
@@ -40,8 +53,10 @@ class ViewController: UIViewController {
     NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "loadToDoList"), object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(loadGoal), name: NSNotification.Name(rawValue: "loadGoal"), object: nil)
     
+    //register xib file cell
     toDoTableView.register(UINib(nibName: "ToDoTableViewCell", bundle: nil), forCellReuseIdentifier: "ToDoCell")
     goalsTableView.register(UINib(nibName: "GoalTableViewCell", bundle: nil), forCellReuseIdentifier: "GoalTableViewCell")
+    // ----------------------
     
 //    print(beginingday.description)
   }
