@@ -8,16 +8,33 @@
 
 import UIKit
 import RealmSwift
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
   var window: UIWindow?
 
+//  func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+//    completionHandler([.alert,.sound])
+//  }
+//
+//  func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+//    if response.notification.request.identifier == "testIdentify" {
+//      print("handling")
+//    }
+//
+//    completionHandler()
+//  }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-//    print(Realm.Configuration.defaultConfiguration.fileURL)
+    
+//    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound,.badge]) { (granted, error) in
+//      print("granted: \(granted)")
+//    }
+//    UNUserNotificationCenter.current().delegate = self
+    
     return true
   }
 

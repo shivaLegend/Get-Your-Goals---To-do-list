@@ -12,4 +12,5 @@ import RealmSwift
 class ToDo: Object {
     @objc dynamic var name = ""
   @objc dynamic var time = Date()
+  @objc dynamic var check = false
 }

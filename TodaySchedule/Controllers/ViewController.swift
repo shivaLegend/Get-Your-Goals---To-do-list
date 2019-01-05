@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 import SwipeCellKit
-
+import UserNotifications
 
 
 class ViewController: UIViewController {
@@ -34,6 +34,12 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+  
+//    localNotification()
+    LocalPushManager.shared.requestAuthorization()
+    LocalPushManager.shared.sendLocalPush()
+    
+
     
     //get current date
     let date = Date()
@@ -96,7 +102,19 @@ class ViewController: UIViewController {
     
   }
   
+  //MARK: - create content local notification
+//  func localNotification() {
+//      let content = UNMutableNotificationContent()
+//    content.title = "Get your goals"
+//    content.body = "Complete schedule and get your goals!"
+//    content.sound = .default
+//    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+//    let request = UNNotificationRequest(identifier: "testIdentify", content: content, trigger: trigger)
+//    UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+//  }
+  
   @IBAction func addScheduleClickButton(_ sender: Any) {
+    
   }
   
   @IBAction func addGoalsClickButton(_ sender: Any) {
@@ -148,7 +166,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath) as! ToDoTableViewCell
     cell.delegate = self
     cell.nameLbl.text = toDoList[indexPath.row].name
-    
+    if toDoList[indexPath.row].check == true {
+      cell.checkImg.isHidden = false
+    } else {
+      cell.checkImg.isHidden = true
+    }
     //take the time
     let date = toDoList[indexPath.row].time
 //    let calendar = Calendar.current
@@ -187,6 +209,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     return 50
   }
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let item = toDoList[indexPath.row]
+      do {
+        try realm.write {
+          item.check = !item.check
+        }
+      }catch {
+        print("Selected row is error , \(error)")
+      }
+    
+    tableView.reloadData()
+    
     tableView.deselectRow(at: indexPath, animated: true)
   }
   

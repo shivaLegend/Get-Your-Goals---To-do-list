@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "f03bf8a046f2fc3ede7e01394be66b84"
-build_time: [1545922635, 808532000]
+build_time: [1546510542, 40535000]
 inputs:
   "/Users/nguyenductai/Desktop/TodaySchedule/Pods/RealmSwift/RealmSwift/Aliases.swift": [1545155994, 0]
   "/Users/nguyenductai/Desktop/TodaySchedule/Pods/RealmSwift/RealmSwift/Error.swift": [1545155994, 0]

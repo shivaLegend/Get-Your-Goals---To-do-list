@@ -30,13 +30,13 @@ class ToDoTableViewCell: SwipeTableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-      if selected == true {
-        if checkImg.isHidden == true {
-          checkImg.isHidden = false
-        } else {
-          checkImg.isHidden = true
-        }
-      }
+//      if selected == true {
+//        if checkImg.isHidden == true {
+//          checkImg.isHidden = false
+//        } else {
+//          checkImg.isHidden = true
+//        }
+//      }
     }
     
 }

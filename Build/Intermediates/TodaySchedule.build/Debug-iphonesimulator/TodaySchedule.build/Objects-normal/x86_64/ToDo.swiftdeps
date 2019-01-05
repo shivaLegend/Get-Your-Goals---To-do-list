@@ -6,11 +6,14 @@ provides-nominal:
 provides-member:
 - ["13TodaySchedule4ToDoC", ""]
 provides-dynamic-lookup:
+- "check"
 - "name"
 - "time"
 depends-top-level:
+- "BooleanLiteralType"
 - "Date"
 - "Object"
+- "StringLiteralType"
 - "ToDo"
 depends-member:
 - ["10RealmSwift28AssistedObjectiveCBridgeableP", "Date"]
@@ -64,6 +67,7 @@ depends-member:
 - ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "init"]
 - ["So8NSObjectC", "Date"]
+- ["So8NSObjectC", "check"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "name"]
@@ -74,11 +78,13 @@ depends-member:
 - !private ["So8NSObjectP", "init"]
 - ["10RealmSwift6ObjectC", "Date"]
 - ["10RealmSwift6ObjectC", ""]
+- ["10RealmSwift6ObjectC", "check"]
 - ["10RealmSwift6ObjectC", "init"]
 - !private ["10RealmSwift6ObjectC", "init"]
 - ["10RealmSwift6ObjectC", "name"]
 - ["10RealmSwift6ObjectC", "time"]
 - ["So13RLMObjectBaseC", "Date"]
+- ["So13RLMObjectBaseC", "check"]
 - ["So13RLMObjectBaseC", "init"]
 - !private ["So13RLMObjectBaseC", "init"]
 - ["So13RLMObjectBaseC", "name"]
@@ -105,7 +111,7 @@ depends-member:
 - !private ["10RealmSwift14ThreadConfinedP", "init"]
 - !private ["10RealmSwift14ThreadConfinedP", "init"]
 - ["13TodaySchedule4ToDoC", "Date"]
-- ["13TodaySchedule4ToDoC", "deinit"]
+- ["13TodaySchedule4ToDoC", "check"]
 - ["13TodaySchedule4ToDoC", "init"]
 - ["13TodaySchedule4ToDoC", "name"]
 - ["13TodaySchedule4ToDoC", "time"]
@@ -246,7 +252,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "293afe928c69765bb714664b832b15db"
+interface-hash: "ec9a10f27dece745ac02b7c9ced3a5f5"

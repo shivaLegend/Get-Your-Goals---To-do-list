@@ -21,6 +21,7 @@ depends-top-level:
 - "UIApplicationDelegate"
 - "UIResponder"
 - "UIWindow"
+- "UNUserNotificationCenterDelegate"
 depends-member:
 - ["13TodaySchedule11AppDelegateC", "Bool"]
 - ["13TodaySchedule11AppDelegateC", "UIApplication"]
@@ -39,6 +40,7 @@ depends-member:
 - ["13TodaySchedule11AppDelegateC", "applicationWillTerminate"]
 - ["13TodaySchedule11AppDelegateC", "deinit"]
 - ["13TodaySchedule11AppDelegateC", "init"]
+- ["13TodaySchedule11AppDelegateC", "userNotificationCenter"]
 - ["13TodaySchedule11AppDelegateC", "window"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
 - ["s7CVarArgP", ""]
@@ -56,6 +58,7 @@ depends-member:
 - ["s7CVarArgP", "applicationWillTerminate"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "userNotificationCenter"]
 - ["s7CVarArgP", "window"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -73,6 +76,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "userNotificationCenter"]
 - ["s28CustomDebugStringConvertibleP", "window"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
 - ["s23CustomStringConvertibleP", ""]
@@ -90,6 +94,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationWillTerminate"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "userNotificationCenter"]
 - ["s23CustomStringConvertibleP", "window"]
 - ["SQ", "LaunchOptionsKey"]
 - ["SQ", ""]
@@ -107,6 +112,7 @@ depends-member:
 - ["SQ", "applicationWillTerminate"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
+- ["SQ", "userNotificationCenter"]
 - ["SQ", "window"]
 - ["SH", "LaunchOptionsKey"]
 - ["SH", ""]
@@ -124,6 +130,7 @@ depends-member:
 - ["SH", "applicationWillTerminate"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
+- ["SH", "userNotificationCenter"]
 - ["SH", "window"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
@@ -143,6 +150,7 @@ depends-member:
 - ["So8NSObjectC", "applicationWillTerminate"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "userNotificationCenter"]
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
 - ["So8NSObjectP", ""]
@@ -160,6 +168,7 @@ depends-member:
 - ["So8NSObjectP", "applicationWillTerminate"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "userNotificationCenter"]
 - ["So8NSObjectP", "window"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
 - ["So21UIApplicationDelegateP", ""]
@@ -175,6 +184,7 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillEnterForeground"]
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
+- ["So21UIApplicationDelegateP", "userNotificationCenter"]
 - ["So21UIApplicationDelegateP", "window"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -192,6 +202,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "userNotificationCenter"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
@@ -212,6 +223,7 @@ depends-member:
 - ["So11UIResponderC", "applicationWillTerminate"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "userNotificationCenter"]
 - ["So11UIResponderC", "window"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -229,6 +241,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", "userNotificationCenter"]
 - ["So30UIResponderStandardEditActionsP", "window"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - ["So23UIUserActivityRestoringP", ""]
@@ -246,7 +259,23 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- ["So23UIUserActivityRestoringP", "userNotificationCenter"]
 - ["So23UIUserActivityRestoringP", "window"]
+- ["So32UNUserNotificationCenterDelegateP", ""]
+- ["So32UNUserNotificationCenterDelegateP", "application"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidBecomeActive"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidEnterBackground"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidFinishLaunching"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidReceiveMemoryWarning"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationShouldRequestHealthAuthorization"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationSignificantTimeChange"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillEnterForeground"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillResignActive"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillTerminate"]
+- ["So32UNUserNotificationCenterDelegateP", "userNotificationCenter"]
+- ["So32UNUserNotificationCenterDelegateP", "window"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
@@ -263,6 +292,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "userNotificationCenter"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 depends-nominal:
 - "13TodaySchedule11AppDelegateC"
@@ -279,6 +309,7 @@ depends-nominal:
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So23UIUserActivityRestoringP"
+- "So32UNUserNotificationCenterDelegateP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
@@ -356,7 +387,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c978b303382ef8244edf323e8f5b38e3"
+interface-hash: "07ca72c5fc3a89b0a85136d54e461b80"

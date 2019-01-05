@@ -11,11 +11,12 @@
 		CF0F533521AAA1F5000B7648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F533421AAA1F5000B7648 /* AppDelegate.swift */; };
 		CF0F533721AAA1F5000B7648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F533621AAA1F5000B7648 /* ViewController.swift */; };
 		CF0F533A21AAA1F5000B7648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0F533821AAA1F5000B7648 /* Main.storyboard */; };
-		CF0F533C21AAA1F7000B7648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0F533B21AAA1F7000B7648 /* Assets.xcassets */; };
 		CF0F533F21AAA1F7000B7648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0F533D21AAA1F7000B7648 /* LaunchScreen.storyboard */; };
 		CF0F534921AAF45F000B7648 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F534721AAF45F000B7648 /* ToDoTableViewCell.swift */; };
 		CF0F534A21AAF45F000B7648 /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0F534821AAF45F000B7648 /* ToDoTableViewCell.xib */; };
 		CF11A7A721AB92E3007E3500 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11A7A621AB92E3007E3500 /* AddToDoViewController.swift */; };
+		CF13097221DD16B800658909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF13097121DD16B800658909 /* Assets.xcassets */; };
+		CF133E7521D898C100F5B7AB /* LocalPushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF133E7421D898C100F5B7AB /* LocalPushManager.swift */; };
 		CF151EAA21D51D4200FC90CF /* RoundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF151EA921D51D4200FC90CF /* RoundUIView.swift */; };
 		CF48D47A21CBDF89001A6638 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48D47821CBDF89001A6638 /* GoalTableViewCell.swift */; };
 		CF48D47B21CBDF89001A6638 /* GoalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF48D47921CBDF89001A6638 /* GoalTableViewCell.xib */; };
@@ -33,12 +34,13 @@
 		CF0F533421AAA1F5000B7648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF0F533621AAA1F5000B7648 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF0F533921AAA1F5000B7648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CF0F533B21AAA1F7000B7648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF0F533E21AAA1F7000B7648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF0F534021AAA1F7000B7648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF0F534721AAF45F000B7648 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		CF0F534821AAF45F000B7648 /* ToDoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTableViewCell.xib; sourceTree = "<group>"; };
 		CF11A7A621AB92E3007E3500 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		CF13097121DD16B800658909 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF133E7421D898C100F5B7AB /* LocalPushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushManager.swift; sourceTree = "<group>"; };
 		CF151EA921D51D4200FC90CF /* RoundUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUIView.swift; sourceTree = "<group>"; };
 		CF48D47821CBDF89001A6638 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		CF48D47921CBDF89001A6638 /* GoalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalTableViewCell.xib; sourceTree = "<group>"; };
@@ -101,11 +103,12 @@
 			isa = PBXGroup;
 			children = (
 				CF0F533421AAA1F5000B7648 /* AppDelegate.swift */,
+				CF133E7321D898AC00F5B7AB /* Helper */,
 				CF6D028421D6229300B6585C /* Extensions */,
 				CFAECB9021C344D300CD798A /* Models */,
 				CF0F534621AAF40D000B7648 /* Views */,
+				CF13097121DD16B800658909 /* Assets.xcassets */,
 				CF11A7A521AB92AE007E3500 /* Controllers */,
-				CF0F533B21AAA1F7000B7648 /* Assets.xcassets */,
 				CF0F534021AAA1F7000B7648 /* Info.plist */,
 			);
 			path = TodaySchedule;
@@ -134,6 +137,14 @@
 				CF48D47E21CBF9A7001A6638 /* AddGoalViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF133E7321D898AC00F5B7AB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CF133E7421D898C100F5B7AB /* LocalPushManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		CF151EA821D51D2500FC90CF /* Custom UIView */ = {
@@ -231,10 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0F533F21AAA1F7000B7648 /* LaunchScreen.storyboard in Resources */,
-				CF0F533C21AAA1F7000B7648 /* Assets.xcassets in Resources */,
 				CF48D47B21CBDF89001A6638 /* GoalTableViewCell.xib in Resources */,
 				CF0F533A21AAA1F5000B7648 /* Main.storyboard in Resources */,
 				CF0F534A21AAF45F000B7648 /* ToDoTableViewCell.xib in Resources */,
+				CF13097221DD16B800658909 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +325,7 @@
 				CF48D47A21CBDF89001A6638 /* GoalTableViewCell.swift in Sources */,
 				CF0F533521AAA1F5000B7648 /* AppDelegate.swift in Sources */,
 				CF48D47D21CBE51E001A6638 /* Goal.swift in Sources */,
+				CF133E7521D898C100F5B7AB /* LocalPushManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
