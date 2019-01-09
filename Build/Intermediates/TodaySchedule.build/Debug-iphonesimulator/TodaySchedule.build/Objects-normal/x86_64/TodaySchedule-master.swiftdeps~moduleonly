@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "426ea9ac6900282aa13194e50c2bd1ba"
-build_time: [1546509757, 123030000]
+options: "01c45ff4d3277d37963eecbba8e3f737"
+build_time: [1547021566, 960671000]
 inputs:
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Views/Custom UIButton/RoundUIButton.swift": [1546336122, 0]
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Controllers/AddToDoViewController.swift": [1545982151, 0]
@@ -13,4 +13,4 @@ inputs:
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Views/GoalTableViewCell.swift": [1545317606, 0]
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/AppDelegate.swift": [1546493662, 0]
   "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Models/Goal.swift": [1545318167, 0]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Helper/LocalPushManager.swift": [1546483615, 0]
+  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Helper/LocalPushManager.swift": [1547016924, 0]

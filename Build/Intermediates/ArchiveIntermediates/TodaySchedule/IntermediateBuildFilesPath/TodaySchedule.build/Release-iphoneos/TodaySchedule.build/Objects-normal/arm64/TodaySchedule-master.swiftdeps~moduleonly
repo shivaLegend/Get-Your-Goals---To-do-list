@@ -1,16 +1,4 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "7a359b4a3f02fbbe349a94b047fe9b80"
-build_time: [1546506191, 679079000]
+options: "3e3bd419c309a09178a7650f8bfed77c"
+build_time: [1547021595, 534841000]
 inputs:
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Views/Custom UIButton/RoundUIButton.swift": [9223372036, 854775807]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Controllers/AddToDoViewController.swift": [9223372036, 854775807]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Controllers/AddGoalViewController.swift": [9223372036, 854775807]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Models/ToDo.swift": [9223372036, 854775807]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Extensions/DayMonthString.swift": [9223372036, 854775807]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Views/ToDoTableViewCell.swift": [9223372036, 854775807]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Controllers/ViewController.swift": [9223372036, 854775807]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Views/Custom UIView/RoundUIView.swift": [9223372036, 854775807]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Views/GoalTableViewCell.swift": [9223372036, 854775807]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/AppDelegate.swift": [9223372036, 854775807]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Models/Goal.swift": [9223372036, 854775807]
-  "/Users/nguyenductai/Desktop/TodaySchedule/TodaySchedule/Helper/LocalPushManager.swift": [9223372036, 854775807]

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="ipad12_9rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,18 +15,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TodaySchedule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUA-t4-s0F">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="24"/>
                                 <color key="backgroundColor" red="0.0" green="0.67843137254901964" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXv-e7-E4G">
-                                <rect key="frame" x="0.0" y="20" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="24" width="1024" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9w-Nf-aZx">
-                                        <rect key="frame" x="161.66666666666666" y="7.6666666666666679" width="91" height="25.000000000000004"/>
+                                        <rect key="frame" x="466.5" y="7.5" width="91" height="25"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -56,7 +56,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0R-aw-5Cy" userLabel="add schedule">
-                                <rect key="frame" x="369" y="20" width="40" height="40"/>
+                                <rect key="frame" x="979" y="24" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="n0R-aw-5Cy" secondAttribute="height" multiplier="1:1" id="Dl2-Kv-5Yf"/>
                                 </constraints>
@@ -67,7 +67,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hhE-LA-aFN">
-                                <rect key="frame" x="0.0" y="586" width="414" height="150"/>
+                                <rect key="frame" x="0.0" y="1216" width="1024" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="nfR-qF-qZA"/>
@@ -78,7 +78,7 @@
                                 </connections>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HNb-uG-PIn">
-                                <rect key="frame" x="0.0" y="119" width="414" height="427"/>
+                                <rect key="frame" x="0.0" y="123" width="1024" height="1053"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="rBs-em-MCF"/>
@@ -86,10 +86,10 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHJ-bc-Tak">
-                                <rect key="frame" x="0.0" y="546" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="1176" width="1024" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKW-Ku-Nby" userLabel="add goals">
-                                        <rect key="frame" x="369" y="0.0" width="40" height="40"/>
+                                        <rect key="frame" x="979" y="0.0" width="40" height="40"/>
                                         <state key="normal" image="add"/>
                                         <connections>
                                             <action selector="addGoalsClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJY-kd-okP"/>
@@ -97,7 +97,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stD-rD-ksd">
-                                        <rect key="frame" x="179" y="7.3333333333333695" width="56" height="25.333333333333329"/>
+                                        <rect key="frame" x="484" y="7.5" width="56" height="25"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -114,7 +114,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ7-T0-aL2">
-                                <rect key="frame" x="0.0" y="60" width="414" height="59"/>
+                                <rect key="frame" x="0.0" y="64" width="1024" height="59"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="726-Xm-ecA">
                                         <rect key="frame" x="27" y="18" width="66" height="23"/>
@@ -123,7 +123,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="November 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFU-YA-12O">
-                                        <rect key="frame" x="275" y="18.666666666666671" width="112" height="22"/>
+                                        <rect key="frame" x="885" y="18.5" width="112" height="22"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
                                         <color key="textColor" red="0.36078431372549019" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -186,14 +186,14 @@
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="6vK-Xb-kSO" customClass="AddToDoViewController" customModule="TodaySchedule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="51h-jO-Eoj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvp-9C-ao6" customClass="RoundUIView" customModule="TodaySchedule" customModuleProvider="target">
-                                <rect key="frame" x="40" y="284" width="334" height="188"/>
+                                <rect key="frame" x="40" y="419.5" width="944" height="531"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yr4-dq-Auf">
-                                        <rect key="frame" x="8" y="8.0000000000000071" width="137" height="124.66666666666669"/>
+                                        <rect key="frame" x="8" y="8" width="137" height="352"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="137" id="L1q-hJ-eZq"/>
                                         </constraints>
@@ -202,7 +202,7 @@
                                         </date>
                                     </datePicker>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FSR-F8-lLi">
-                                        <rect key="frame" x="153" y="8.0000000000000071" width="173" height="124.66666666666669"/>
+                                        <rect key="frame" x="153" y="8" width="783" height="352"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -211,10 +211,10 @@
                                         </connections>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-m9-9OO">
-                                        <rect key="frame" x="66.666666666666671" y="132.66666666666669" width="200.66666666666663" height="55.333333333333343"/>
+                                        <rect key="frame" x="189" y="360" width="566" height="171"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZV-YA-rc2" customClass="RoundUIButton" customModule="TodaySchedule" customModuleProvider="target">
-                                                <rect key="frame" x="145.66666666666669" y="9" width="55" height="37.333333333333336"/>
+                                                <rect key="frame" x="511" y="50.5" width="55" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="55" id="qEx-PD-eSV"/>
@@ -247,8 +247,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6z-ni-raX" customClass="RoundUIButton" customModule="TodaySchedule" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="9" width="55" height="37.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="50.5" width="55" height="70"/>
                                                 <color key="backgroundColor" red="0.93725490196078431" green="0.46666666666666667" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="UDO-AA-bEM"/>
+                                                </constraints>
                                                 <state key="normal" title="Save">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -285,7 +288,7 @@
                                             <constraint firstItem="J6z-ni-raX" firstAttribute="leading" secondItem="M9h-m9-9OO" secondAttribute="leading" id="I0o-Pe-Q5Z"/>
                                             <constraint firstAttribute="trailing" secondItem="6ZV-YA-rc2" secondAttribute="trailing" id="Ni5-WW-HRe"/>
                                             <constraint firstItem="J6z-ni-raX" firstAttribute="width" secondItem="6ZV-YA-rc2" secondAttribute="width" id="aFY-sl-wuc"/>
-                                            <constraint firstItem="J6z-ni-raX" firstAttribute="height" secondItem="M9h-m9-9OO" secondAttribute="height" multiplier="37:55" id="bZP-x7-i9G"/>
+                                            <constraint firstItem="J6z-ni-raX" firstAttribute="height" secondItem="M9h-m9-9OO" secondAttribute="height" multiplier="37:55" priority="750" id="bZP-x7-i9G"/>
                                             <constraint firstItem="6ZV-YA-rc2" firstAttribute="centerY" secondItem="M9h-m9-9OO" secondAttribute="centerY" id="gTh-QX-JIc"/>
                                             <constraint firstItem="6ZV-YA-rc2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="J6z-ni-raX" secondAttribute="trailing" constant="8" symbolic="YES" id="n01-wX-PdQ"/>
                                             <constraint firstItem="J6z-ni-raX" firstAttribute="centerY" secondItem="M9h-m9-9OO" secondAttribute="centerY" id="n9O-gI-rBq"/>
@@ -338,24 +341,27 @@
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="1pW-ZW-cQP" customClass="AddGoalViewController" customModule="TodaySchedule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GZU-ba-Vbd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQ6-xC-WV7" customClass="RoundUIView" customModule="TodaySchedule" customModuleProvider="target">
-                                <rect key="frame" x="40" y="284" width="334" height="188"/>
+                                <rect key="frame" x="40" y="419.5" width="944" height="531"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eC1-9l-CfM">
-                                        <rect key="frame" x="8" y="8.0000000000000071" width="318" height="124.66666666666669"/>
+                                        <rect key="frame" x="8" y="8" width="928" height="352"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGS-Xs-mXI">
-                                        <rect key="frame" x="66.666666666666671" y="132.66666666666669" width="200.66666666666663" height="55.333333333333343"/>
+                                        <rect key="frame" x="189" y="360" width="566" height="171"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-NA-L8Q" customClass="RoundUIButton" customModule="TodaySchedule" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="9" width="55" height="37.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="50.5" width="55" height="70"/>
                                                 <color key="backgroundColor" red="0.93725490196078431" green="0.46666666666666667" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="hln-cT-ILS"/>
+                                                </constraints>
                                                 <state key="normal" title="Save">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -387,7 +393,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D21-oS-vE0" customClass="RoundUIButton" customModule="TodaySchedule" customModuleProvider="target">
-                                                <rect key="frame" x="145.66666666666669" y="9" width="55" height="37.333333333333336"/>
+                                                <rect key="frame" x="511" y="50.5" width="55" height="70"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="55" id="bbQ-MN-uX0"/>
@@ -425,7 +431,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="vH6-NA-L8Q" firstAttribute="height" secondItem="BGS-Xs-mXI" secondAttribute="height" multiplier="37:55" id="8Ja-zE-tOe"/>
+                                            <constraint firstItem="vH6-NA-L8Q" firstAttribute="height" secondItem="BGS-Xs-mXI" secondAttribute="height" multiplier="37:55" priority="750" id="8Ja-zE-tOe"/>
                                             <constraint firstItem="D21-oS-vE0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vH6-NA-L8Q" secondAttribute="trailing" id="BC3-hd-GZj"/>
                                             <constraint firstItem="vH6-NA-L8Q" firstAttribute="leading" secondItem="BGS-Xs-mXI" secondAttribute="leading" id="KDo-pq-TxL"/>
                                             <constraint firstItem="D21-oS-vE0" firstAttribute="centerY" secondItem="BGS-Xs-mXI" secondAttribute="centerY" id="O4Q-Xl-QEz"/>
