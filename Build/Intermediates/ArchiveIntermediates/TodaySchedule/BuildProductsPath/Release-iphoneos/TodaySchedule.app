@@ -1,1 +1,0 @@
-/Users/nguyenductai/Desktop/TodaySchedule/Build/Intermediates/ArchiveIntermediates/TodaySchedule/InstallationBuildProductsLocation/Applications/TodaySchedule.app
