@@ -22,8 +22,11 @@ class ToDoTableViewCell: SwipeTableViewCell {
     circleView.layer.cornerRadius = circleView.frame.size.width/2
     circleView.clipsToBounds = true
     
-    circleView.layer.borderColor = UIColor.black.cgColor
+    circleView.layer.borderColor = UIColor.white.cgColor
     circleView.layer.borderWidth = 5.0
+    
+    checkImg.image = checkImg.image!.withRenderingMode(.alwaysTemplate)
+    checkImg.tintColor = UIColor.white
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -35,7 +35,7 @@ class LocalPushManager: NSObject {
     dateComponents.calendar = Calendar.current
     
 //    dateComponents.weekday = 3  // Tuesday
-    dateComponents.hour = 8    // 14:00 hours
+    dateComponents.hour = 7    // 14:00 hours
     
     // Create the trigger as a repeating event.
     let trigger = UNCalendarNotificationTrigger(

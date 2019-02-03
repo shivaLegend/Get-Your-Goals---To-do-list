@@ -20,9 +20,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lys-fu-Sq9">
-                        <rect key="frame" x="15" y="24.5" width="72.5" height="20"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="15" y="22" width="81" height="22.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdM-bx-UQi">
@@ -36,20 +36,21 @@
                         <rect key="frame" x="280" y="19.5" width="25" height="25"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLJ-4h-SAA">
-                        <rect key="frame" x="99.5" y="24.5" width="84.5" height="20"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="108" y="22" width="94.5" height="22.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWX-Qm-DCi" userLabel="View Distance">
-                        <rect key="frame" x="91.5" y="32.5" width="4" height="4"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <rect key="frame" x="100" y="31.5" width="4" height="4"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="4" id="OWg-CQ-Wvl"/>
                             <constraint firstAttribute="width" constant="4" id="s6z-oS-eQc"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.22352941176470587" green="0.24313725490196078" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="sbi-bB-6jx" secondAttribute="trailing" constant="15" id="01w-Sd-5U7"/>
                     <constraint firstAttribute="trailing" secondItem="pdM-bx-UQi" secondAttribute="trailing" constant="10" id="5kb-GI-5MN"/>
@@ -65,6 +66,7 @@
                     <constraint firstAttribute="bottom" secondItem="pdM-bx-UQi" secondAttribute="bottom" id="syl-MI-BFq"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="checkImg" destination="sbi-bB-6jx" id="Kco-En-H6n"/>

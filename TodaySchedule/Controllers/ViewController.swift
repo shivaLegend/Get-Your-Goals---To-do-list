@@ -29,12 +29,23 @@ class ViewController: UIViewController {
       return realm.objects(ToDo.self).sorted(byKeyPath: "time", ascending: true) //Sort array
     }
   }
-  //Start data everyday
+//  //Start data everyday
 //  let beginingday = NSCalendar.current.dateComponents([.hour, .minute], from: Date())
+  
+  
+  //Array image background table view
+  var imgArray = ["IMG_1","IMG_2","IMG_3","IMG_4","IMG_5","IMG_6","IMG_7","IMG_8","IMG_9","IMG_10","IMG_11","IMG_11","IMG_12","IMG_13","IMG_14","IMG_15","IMG_16","IMG_17","IMG_18","IMG_19","IMG_20","IMG_21","IMG_22","IMG_23","IMG_24","IMG_25","IMG_26","IMG_27","IMG_28","IMG_29","IMG_30","IMG_31","IMG_32","IMG_33","IMG_34","IMG_35","IMG_36","IMG_37","IMG_38","IMG_39","IMG_40","IMG_41","IMG_42","IMG_43","IMG_44"]
   
   override func viewDidLoad() {
     super.viewDidLoad()
-  
+    
+    //Background image
+    let randomIndex = Int(arc4random_uniform(UInt32(imgArray.count)))
+    toDoTableView.backgroundView = UIImageView(image: UIImage(named: imgArray[randomIndex]))
+    toDoTableView.backgroundView?.alpha = 1
+    
+    
+    
 //    localNotification()
     LocalPushManager.shared.requestAuthorization()
     LocalPushManager.shared.sendLocalPush()

@@ -26,7 +26,7 @@ depends-top-level:
 - !private "=="
 - !private ">"
 - !private "??"
-- !private "Array"
+- "Array"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "CGFloat"
@@ -48,7 +48,7 @@ depends-top-level:
 - "Realm"
 - "Results"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "SwipeAction"
 - "SwipeActionsOrientation"
 - "SwipeTableOptions"
@@ -60,6 +60,7 @@ depends-top-level:
 - !private "UIAlertController"
 - "UIButton"
 - !private "UIImage"
+- !private "UIImageView"
 - "UILabel"
 - !private "UINib"
 - "UITableView"
@@ -67,10 +68,17 @@ depends-top-level:
 - "UITableViewDataSource"
 - "UITableViewDelegate"
 - "UIViewController"
+- !private "UInt32"
 - !private "UnicodeScalarType"
 - "ViewController"
+- !private "arc4random_uniform"
 - !private "print"
 depends-member:
+- !private ["10RealmSwift11AddableTypeP", "init"]
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "subscript"]
 - !private ["10RealmSwift28AssistedObjectiveCBridgeableP", "check"]
 - !private ["10RealmSwift28AssistedObjectiveCBridgeableP", "count"]
 - !private ["10RealmSwift28AssistedObjectiveCBridgeableP", "name"]
@@ -79,18 +87,22 @@ depends-member:
 - !private ["10RealmSwift28AssistedObjectiveCBridgeableP", "time"]
 - !private ["SK", "check"]
 - !private ["SK", "count"]
-- !private ["SK", "init"]
-- !private ["SK", "init"]
+- ["SK", "init"]
+- ["SK", "init"]
 - !private ["SK", "name"]
 - !private ["SK", "row"]
 - !private ["SK", "sorted"]
 - !private ["SK", "subscript"]
 - !private ["SK", "time"]
+- !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "alpha"]
+- !private ["So15CALayerDelegateP", "backgroundView"]
 - !private ["So15CALayerDelegateP", "checkImg"]
 - !private ["So15CALayerDelegateP", "delegate"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "deselectRow"]
+- !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "isHidden"]
 - !private ["So15CALayerDelegateP", "nameLbl"]
 - !private ["So15CALayerDelegateP", "numberOfSections"]
@@ -103,6 +115,7 @@ depends-member:
 - !private ["s7CVarArgP", "Calendar"]
 - !private ["s7CVarArgP", "Date"]
 - !private ["s7CVarArgP", "Goal"]
+- !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "LocalPushManager"]
 - !private ["s7CVarArgP", "NSIndexSet"]
 - !private ["s7CVarArgP", "NSMakeRange"]
@@ -117,12 +130,17 @@ depends-member:
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIImage"]
+- !private ["s7CVarArgP", "UIImageView"]
 - !private ["s7CVarArgP", "UINib"]
+- !private ["s7CVarArgP", "UInt32"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addAction"]
 - !private ["s7CVarArgP", "addGoalButton"]
 - !private ["s7CVarArgP", "addObserver"]
+- !private ["s7CVarArgP", "alpha"]
+- !private ["s7CVarArgP", "arc4random_uniform"]
+- !private ["s7CVarArgP", "backgroundView"]
 - !private ["s7CVarArgP", "check"]
 - !private ["s7CVarArgP", "checkImg"]
 - !private ["s7CVarArgP", "count"]
@@ -135,10 +153,11 @@ depends-member:
 - !private ["s7CVarArgP", "goalList"]
 - !private ["s7CVarArgP", "goalsTableView"]
 - !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "imgArray"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedView"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "loadGoal"]
 - !private ["s7CVarArgP", "loadList"]
@@ -191,16 +210,16 @@ depends-member:
 - !private ["10Foundation8CalendarV", "dateComponents"]
 - !private ["Sl", "check"]
 - !private ["Sl", "count"]
-- !private ["Sl", "init"]
-- !private ["Sl", "init"]
+- ["Sl", "init"]
+- ["Sl", "init"]
 - !private ["Sl", "name"]
 - !private ["Sl", "row"]
 - !private ["Sl", "sorted"]
 - !private ["Sl", "subscript"]
 - !private ["Sl", "time"]
 - !private ["SL", "dayOfWeek"]
-- !private ["SL", "init"]
-- !private ["SL", "init"]
+- ["SL", "init"]
+- ["SL", "init"]
 - !private ["SL", "month"]
 - !private ["SL", "row"]
 - !private ["10Foundation8CalendarV9ComponentO", "day"]
@@ -211,6 +230,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Calendar"]
 - !private ["s28CustomDebugStringConvertibleP", "Date"]
 - !private ["s28CustomDebugStringConvertibleP", "Goal"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "LocalPushManager"]
 - !private ["s28CustomDebugStringConvertibleP", "NSIndexSet"]
 - !private ["s28CustomDebugStringConvertibleP", "NSMakeRange"]
@@ -225,11 +245,16 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImageView"]
 - !private ["s28CustomDebugStringConvertibleP", "UINib"]
+- !private ["s28CustomDebugStringConvertibleP", "UInt32"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
 - !private ["s28CustomDebugStringConvertibleP", "addGoalButton"]
 - !private ["s28CustomDebugStringConvertibleP", "addObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "alpha"]
+- !private ["s28CustomDebugStringConvertibleP", "arc4random_uniform"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundView"]
 - !private ["s28CustomDebugStringConvertibleP", "check"]
 - !private ["s28CustomDebugStringConvertibleP", "checkImg"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
@@ -248,10 +273,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "goalsTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "hour"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "imgArray"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "loadGoal"]
 - !private ["s28CustomDebugStringConvertibleP", "loadList"]
@@ -303,6 +329,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - ["s28CustomDebugStringConvertibleP", "visibleRect"]
+- !private ["10RealmSwift26CustomObjectiveCBridgeableP", "backgroundView"]
 - !private ["10RealmSwift26CustomObjectiveCBridgeableP", "destructive"]
 - !private ["10RealmSwift26CustomObjectiveCBridgeableP", "isHidden"]
 - !private ["10RealmSwift26CustomObjectiveCBridgeableP", "numberOfSections"]
@@ -311,18 +338,20 @@ depends-member:
 - !private ["10RealmSwift26CustomObjectiveCBridgeableP", "text"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "dayOfWeek"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "month"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "backgroundView"]
+- !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "current"]
 - !private ["s17CustomReflectableP", "dateComponents"]
 - !private ["s17CustomReflectableP", "day"]
 - !private ["s17CustomReflectableP", "dayOfWeek"]
 - !private ["s17CustomReflectableP", "destructive"]
 - !private ["s17CustomReflectableP", "hour"]
-- !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "isHidden"]
 - !private ["s17CustomReflectableP", "minute"]
 - !private ["s17CustomReflectableP", "month"]
@@ -330,10 +359,12 @@ depends-member:
 - !private ["s17CustomReflectableP", "register"]
 - !private ["s17CustomReflectableP", "reloadSections"]
 - !private ["s17CustomReflectableP", "row"]
+- !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "Calendar"]
 - !private ["s23CustomStringConvertibleP", "Date"]
 - !private ["s23CustomStringConvertibleP", "Goal"]
+- !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "LocalPushManager"]
 - !private ["s23CustomStringConvertibleP", "NSIndexSet"]
 - !private ["s23CustomStringConvertibleP", "NSMakeRange"]
@@ -348,12 +379,17 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
+- !private ["s23CustomStringConvertibleP", "UIImageView"]
 - !private ["s23CustomStringConvertibleP", "UINib"]
+- !private ["s23CustomStringConvertibleP", "UInt32"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addAction"]
 - !private ["s23CustomStringConvertibleP", "addGoalButton"]
 - !private ["s23CustomStringConvertibleP", "addObserver"]
+- !private ["s23CustomStringConvertibleP", "alpha"]
+- !private ["s23CustomStringConvertibleP", "arc4random_uniform"]
+- !private ["s23CustomStringConvertibleP", "backgroundView"]
 - !private ["s23CustomStringConvertibleP", "check"]
 - !private ["s23CustomStringConvertibleP", "checkImg"]
 - !private ["s23CustomStringConvertibleP", "count"]
@@ -371,10 +407,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "goalsTableView"]
 - !private ["s23CustomStringConvertibleP", "hour"]
 - !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "imgArray"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "loadGoal"]
 - !private ["s23CustomStringConvertibleP", "loadList"]
@@ -433,14 +470,16 @@ depends-member:
 - !private ["10Foundation14DateComponentsV", "hour"]
 - !private ["10Foundation14DateComponentsV", "minute"]
 - !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "backgroundView"]
+- !private ["Se", "count"]
 - !private ["Se", "current"]
 - !private ["Se", "dateComponents"]
 - !private ["Se", "day"]
 - !private ["Se", "dayOfWeek"]
 - !private ["Se", "destructive"]
 - !private ["Se", "hour"]
-- !private ["Se", "init"]
-- !private ["Se", "init"]
+- ["Se", "init"]
+- ["Se", "init"]
 - !private ["Se", "isHidden"]
 - !private ["Se", "minute"]
 - !private ["Se", "month"]
@@ -448,16 +487,19 @@ depends-member:
 - !private ["Se", "register"]
 - !private ["Se", "reloadSections"]
 - !private ["Se", "row"]
+- !private ["Se", "subscript"]
 - !private ["Se", "text"]
 - !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "backgroundView"]
+- !private ["SE", "count"]
 - !private ["SE", "current"]
 - !private ["SE", "dateComponents"]
 - !private ["SE", "day"]
 - !private ["SE", "dayOfWeek"]
 - !private ["SE", "destructive"]
 - !private ["SE", "hour"]
-- !private ["SE", "init"]
-- !private ["SE", "init"]
+- ["SE", "init"]
+- ["SE", "init"]
 - !private ["SE", "isHidden"]
 - !private ["SE", "minute"]
 - !private ["SE", "month"]
@@ -465,10 +507,12 @@ depends-member:
 - !private ["SE", "register"]
 - !private ["SE", "reloadSections"]
 - !private ["SE", "row"]
+- !private ["SE", "subscript"]
 - !private ["SE", "text"]
 - !private ["SQ", "Calendar"]
 - !private ["SQ", "Date"]
 - !private ["SQ", "Goal"]
+- !private ["SQ", "Int"]
 - !private ["SQ", "LocalPushManager"]
 - !private ["SQ", "NSIndexSet"]
 - !private ["SQ", "NSMakeRange"]
@@ -483,14 +527,19 @@ depends-member:
 - !private ["SQ", "UIAlertAction"]
 - !private ["SQ", "UIAlertController"]
 - !private ["SQ", "UIImage"]
+- !private ["SQ", "UIImageView"]
 - !private ["SQ", "UINib"]
+- !private ["SQ", "UInt32"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "addAction"]
 - !private ["SQ", "addGoalButton"]
 - !private ["SQ", "addObserver"]
 - !private ["SQ", "alert"]
+- !private ["SQ", "alpha"]
+- !private ["SQ", "arc4random_uniform"]
 - !private ["SQ", "automatic"]
+- !private ["SQ", "backgroundView"]
 - !private ["SQ", "cancel"]
 - !private ["SQ", "check"]
 - !private ["SQ", "checkImg"]
@@ -512,10 +561,11 @@ depends-member:
 - !private ["SQ", "goalsTableView"]
 - !private ["SQ", "hour"]
 - !private ["SQ", "image"]
+- !private ["SQ", "imgArray"]
 - ["SQ", "indexPathForPreferredFocusedView"]
 - ["SQ", "indexPathForPreferredFocusedViewInTableView"]
 - ["SQ", "init"]
-- !private ["SQ", "init"]
+- ["SQ", "init"]
 - !private ["SQ", "isHidden"]
 - !private ["SQ", "loadGoal"]
 - !private ["SQ", "loadList"]
@@ -571,20 +621,25 @@ depends-member:
 - ["SQ", "visibleRect"]
 - !private ["SQ", "write"]
 - !private ["SQ", "year"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "backgroundView"]
 - !private ["s23ExpressibleByNilLiteralP", "destructive"]
 - !private ["s23ExpressibleByNilLiteralP", "isHidden"]
 - !private ["s23ExpressibleByNilLiteralP", "numberOfSections"]
 - !private ["s23ExpressibleByNilLiteralP", "register"]
 - !private ["s23ExpressibleByNilLiteralP", "reloadSections"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
 - ["13TodaySchedule4GoalC", "deinit"]
 - !private ["13TodaySchedule4GoalC", "name"]
 - !private ["13TodaySchedule17GoalTableViewCellC", "delegate"]
@@ -592,6 +647,7 @@ depends-member:
 - !private ["SH", "Calendar"]
 - !private ["SH", "Date"]
 - !private ["SH", "Goal"]
+- !private ["SH", "Int"]
 - !private ["SH", "LocalPushManager"]
 - !private ["SH", "NSIndexSet"]
 - !private ["SH", "NSMakeRange"]
@@ -606,14 +662,19 @@ depends-member:
 - !private ["SH", "UIAlertAction"]
 - !private ["SH", "UIAlertController"]
 - !private ["SH", "UIImage"]
+- !private ["SH", "UIImageView"]
 - !private ["SH", "UINib"]
+- !private ["SH", "UInt32"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "addAction"]
 - !private ["SH", "addGoalButton"]
 - !private ["SH", "addObserver"]
 - !private ["SH", "alert"]
+- !private ["SH", "alpha"]
+- !private ["SH", "arc4random_uniform"]
 - !private ["SH", "automatic"]
+- !private ["SH", "backgroundView"]
 - !private ["SH", "cancel"]
 - !private ["SH", "check"]
 - !private ["SH", "checkImg"]
@@ -633,10 +694,11 @@ depends-member:
 - !private ["SH", "goalsTableView"]
 - !private ["SH", "hour"]
 - !private ["SH", "image"]
+- !private ["SH", "imgArray"]
 - ["SH", "indexPathForPreferredFocusedView"]
 - ["SH", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["SH", "init"]
-- !private ["SH", "init"]
+- ["SH", "init"]
+- ["SH", "init"]
 - !private ["SH", "isHidden"]
 - !private ["SH", "loadGoal"]
 - !private ["SH", "loadList"]
@@ -691,6 +753,7 @@ depends-member:
 - ["SH", "visibleRect"]
 - !private ["SH", "year"]
 - !private ["10Foundation9IndexPathV", "row"]
+- !private ["Si", "init"]
 - !private ["s22LazyCollectionProtocolP", "check"]
 - !private ["s22LazyCollectionProtocolP", "count"]
 - !private ["s22LazyCollectionProtocolP", "name"]
@@ -707,20 +770,23 @@ depends-member:
 - !private ["13TodaySchedule16LocalPushManagerC", "sendLocalPush"]
 - !private ["13TodaySchedule16LocalPushManagerC", "shared"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
 - !private ["10RealmSwift10MinMaxTypeP", "dayOfWeek"]
 - !private ["10RealmSwift10MinMaxTypeP", "init"]
 - !private ["10RealmSwift10MinMaxTypeP", "month"]
-- !private ["s10MirrorPathP", "init"]
-- !private ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
 - !private ["SM", "check"]
+- !private ["SM", "count"]
 - !private ["SM", "name"]
 - !private ["SM", "row"]
+- !private ["SM", "subscript"]
 - !private ["SM", "time"]
 - !private ["So8NSCodingP", "Calendar"]
 - !private ["So8NSCodingP", "Date"]
 - !private ["So8NSCodingP", "Goal"]
+- !private ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "LocalPushManager"]
 - !private ["So8NSCodingP", "NSIndexSet"]
 - !private ["So8NSCodingP", "NSMakeRange"]
@@ -735,10 +801,15 @@ depends-member:
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "UIImage"]
+- !private ["So8NSCodingP", "UIImageView"]
 - !private ["So8NSCodingP", "UINib"]
+- !private ["So8NSCodingP", "UInt32"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addAction"]
 - !private ["So8NSCodingP", "addGoalButton"]
+- !private ["So8NSCodingP", "alpha"]
+- !private ["So8NSCodingP", "arc4random_uniform"]
+- !private ["So8NSCodingP", "backgroundView"]
 - !private ["So8NSCodingP", "checkImg"]
 - !private ["So8NSCodingP", "dayLbl"]
 - !private ["So8NSCodingP", "delegate"]
@@ -747,6 +818,7 @@ depends-member:
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "goalList"]
 - !private ["So8NSCodingP", "goalsTableView"]
+- !private ["So8NSCodingP", "imgArray"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So8NSCodingP", "init"]
@@ -797,6 +869,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Calendar"]
 - !private ["So26NSExtensionRequestHandlingP", "Date"]
 - !private ["So26NSExtensionRequestHandlingP", "Goal"]
+- !private ["So26NSExtensionRequestHandlingP", "Int"]
 - !private ["So26NSExtensionRequestHandlingP", "LocalPushManager"]
 - !private ["So26NSExtensionRequestHandlingP", "NSIndexSet"]
 - !private ["So26NSExtensionRequestHandlingP", "NSMakeRange"]
@@ -810,14 +883,18 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
+- !private ["So26NSExtensionRequestHandlingP", "UIImageView"]
 - !private ["So26NSExtensionRequestHandlingP", "UINib"]
+- !private ["So26NSExtensionRequestHandlingP", "UInt32"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
 - !private ["So26NSExtensionRequestHandlingP", "addGoalButton"]
+- !private ["So26NSExtensionRequestHandlingP", "arc4random_uniform"]
 - !private ["So26NSExtensionRequestHandlingP", "dayLbl"]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "goalList"]
 - !private ["So26NSExtensionRequestHandlingP", "goalsTableView"]
+- !private ["So26NSExtensionRequestHandlingP", "imgArray"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
@@ -889,15 +966,20 @@ depends-member:
 - !private ["So8NSObjectC", "UIAlertController"]
 - ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIImage"]
+- !private ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - !private ["So8NSObjectC", "UINib"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
+- !private ["So8NSObjectC", "UInt32"]
 - !private ["So8NSObjectC", "addAction"]
 - ["So8NSObjectC", "addGoalButton"]
 - ["So8NSObjectC", "addGoalsClickButton"]
 - !private ["So8NSObjectC", "addObserver"]
 - ["So8NSObjectC", "addScheduleClickButton"]
+- !private ["So8NSObjectC", "alpha"]
+- !private ["So8NSObjectC", "arc4random_uniform"]
+- !private ["So8NSObjectC", "backgroundView"]
 - !private ["So8NSObjectC", "check"]
 - !private ["So8NSObjectC", "checkImg"]
 - !private ["So8NSObjectC", "count"]
@@ -911,6 +993,7 @@ depends-member:
 - ["So8NSObjectC", "goalList"]
 - ["So8NSObjectC", "goalsTableView"]
 - !private ["So8NSObjectC", "image"]
+- ["So8NSObjectC", "imgArray"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
@@ -966,6 +1049,7 @@ depends-member:
 - !private ["So8NSObjectP", "Calendar"]
 - !private ["So8NSObjectP", "Date"]
 - !private ["So8NSObjectP", "Goal"]
+- !private ["So8NSObjectP", "Int"]
 - !private ["So8NSObjectP", "LocalPushManager"]
 - !private ["So8NSObjectP", "NSIndexSet"]
 - !private ["So8NSObjectP", "NSMakeRange"]
@@ -980,11 +1064,16 @@ depends-member:
 - !private ["So8NSObjectP", "UIAlertAction"]
 - !private ["So8NSObjectP", "UIAlertController"]
 - !private ["So8NSObjectP", "UIImage"]
+- !private ["So8NSObjectP", "UIImageView"]
 - !private ["So8NSObjectP", "UINib"]
+- !private ["So8NSObjectP", "UInt32"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addAction"]
 - !private ["So8NSObjectP", "addGoalButton"]
 - !private ["So8NSObjectP", "addObserver"]
+- !private ["So8NSObjectP", "alpha"]
+- !private ["So8NSObjectP", "arc4random_uniform"]
+- !private ["So8NSObjectP", "backgroundView"]
 - !private ["So8NSObjectP", "check"]
 - !private ["So8NSObjectP", "checkImg"]
 - !private ["So8NSObjectP", "count"]
@@ -997,6 +1086,7 @@ depends-member:
 - !private ["So8NSObjectP", "goalList"]
 - !private ["So8NSObjectP", "goalsTableView"]
 - !private ["So8NSObjectP", "image"]
+- !private ["So8NSObjectP", "imgArray"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So8NSObjectP", "init"]
@@ -1053,15 +1143,18 @@ depends-member:
 - !private ["So18NSNotificationNamea", "init"]
 - !private ["So20NSNotificationCenterC", "addObserver"]
 - !private ["So20NSNotificationCenterC", "default"]
+- !private ["Sj", "init"]
 - !private ["10RealmSwift6ObjectC", "check"]
 - !private ["10RealmSwift6ObjectC", "name"]
 - !private ["10RealmSwift6ObjectC", "time"]
+- !private ["Sq", "backgroundView"]
 - !private ["Sq", "destructive"]
 - !private ["Sq", "isHidden"]
 - !private ["Sq", "numberOfSections"]
 - !private ["Sq", "register"]
 - !private ["Sq", "reloadSections"]
 - !private ["Sq", "text"]
+- !private ["10RealmSwift16OptionalProtocolP", "backgroundView"]
 - !private ["10RealmSwift16OptionalProtocolP", "destructive"]
 - !private ["10RealmSwift16OptionalProtocolP", "isHidden"]
 - !private ["10RealmSwift16OptionalProtocolP", "numberOfSections"]
@@ -1079,9 +1172,11 @@ depends-member:
 - !private ["Sk", "subscript"]
 - !private ["Sk", "time"]
 - !private ["Sm", "check"]
-- !private ["Sm", "init"]
-- !private ["Sm", "init"]
+- !private ["Sm", "count"]
+- ["Sm", "init"]
+- ["Sm", "init"]
 - !private ["Sm", "name"]
+- !private ["Sm", "subscript"]
 - !private ["Sm", "time"]
 - !private ["SY", "alert"]
 - !private ["SY", "automatic"]
@@ -1102,11 +1197,12 @@ depends-member:
 - !private ["10RealmSwift0A14CollectionBaseP", "sorted"]
 - !private ["10RealmSwift0A14CollectionBaseP", "subscript"]
 - !private ["10RealmSwift0A15CollectionValueP", "_getBuiltinLogicValue"]
+- !private ["10RealmSwift0A15CollectionValueP", "backgroundView"]
 - !private ["10RealmSwift0A15CollectionValueP", "check"]
 - !private ["10RealmSwift0A15CollectionValueP", "dayOfWeek"]
 - !private ["10RealmSwift0A15CollectionValueP", "destructive"]
-- !private ["10RealmSwift0A15CollectionValueP", "init"]
-- !private ["10RealmSwift0A15CollectionValueP", "init"]
+- ["10RealmSwift0A15CollectionValueP", "init"]
+- ["10RealmSwift0A15CollectionValueP", "init"]
 - !private ["10RealmSwift0A15CollectionValueP", "isHidden"]
 - !private ["10RealmSwift0A15CollectionValueP", "month"]
 - !private ["10RealmSwift0A15CollectionValueP", "name"]
@@ -1116,6 +1212,7 @@ depends-member:
 - !private ["10RealmSwift0A15CollectionValueP", "text"]
 - !private ["10RealmSwift0A15CollectionValueP", "time"]
 - !private ["10RealmSwift0A12OptionalTypeP", "_getBuiltinLogicValue"]
+- !private ["10RealmSwift0A12OptionalTypeP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "current"]
 - !private ["10Foundation20ReferenceConvertibleP", "dateComponents"]
 - !private ["10Foundation20ReferenceConvertibleP", "day"]
@@ -1131,20 +1228,23 @@ depends-member:
 - !private ["So23UITableViewRowAnimationV", "automatic"]
 - !private ["ST", "check"]
 - !private ["ST", "count"]
-- !private ["ST", "init"]
-- !private ["ST", "init"]
+- ["ST", "init"]
+- ["ST", "init"]
 - !private ["ST", "name"]
 - !private ["ST", "row"]
 - !private ["ST", "sorted"]
 - !private ["ST", "subscript"]
 - !private ["ST", "time"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
 - !private ["s5SliceV", "check"]
 - !private ["s5SliceV", "name"]
 - !private ["s5SliceV", "time"]
-- !private ["SS", "init"]
-- !private ["SS", "init"]
-- !private ["Sy", "init"]
-- !private ["Sy", "init"]
+- !private ["Sx", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
 - !private ["So22UIAlertControllerStyleV", "alert"]
 - !private ["So18UIAlertActionStyleV", "cancel"]
 - !private ["So18UIAlertActionStyleV", "default"]
@@ -1168,6 +1268,7 @@ depends-member:
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "Calendar"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "Date"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "Goal"]
+- !private ["12SwipeCellKit0a9TableViewB8DelegateP", "Int"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "LocalPushManager"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "NSIndexSet"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "NSMakeRange"]
@@ -1181,13 +1282,17 @@ depends-member:
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "UIAlertAction"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "UIAlertController"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "UIImage"]
+- !private ["12SwipeCellKit0a9TableViewB8DelegateP", "UIImageView"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "UINib"]
+- !private ["12SwipeCellKit0a9TableViewB8DelegateP", "UInt32"]
 - ["12SwipeCellKit0a9TableViewB8DelegateP", ""]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "addGoalButton"]
+- !private ["12SwipeCellKit0a9TableViewB8DelegateP", "arc4random_uniform"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "dayLbl"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "dismiss"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "goalList"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "goalsTableView"]
+- !private ["12SwipeCellKit0a9TableViewB8DelegateP", "imgArray"]
 - ["12SwipeCellKit0a9TableViewB8DelegateP", "indexPathForPreferredFocusedView"]
 - ["12SwipeCellKit0a9TableViewB8DelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["12SwipeCellKit0a9TableViewB8DelegateP", "loadGoal"]
@@ -1227,10 +1332,10 @@ depends-member:
 - !private ["12SwipeCellKit9SwipeableP", "nameLbl"]
 - !private ["12SwipeCellKit9SwipeableP", "timeLbl"]
 - !private ["12SwipeCellKit9SwipeableP", "titleLbl"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - !private ["10RealmSwift14ThreadConfinedP", "check"]
 - !private ["10RealmSwift14ThreadConfinedP", "count"]
 - !private ["10RealmSwift14ThreadConfinedP", "name"]
@@ -1245,7 +1350,10 @@ depends-member:
 - !private ["13TodaySchedule17ToDoTableViewCellC", "delegate"]
 - !private ["13TodaySchedule17ToDoTableViewCellC", "nameLbl"]
 - !private ["13TodaySchedule17ToDoTableViewCellC", "timeLbl"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHidden"]
+- !private ["So29UIAccessibilityIdentificationP", "alpha"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundView"]
 - !private ["So29UIAccessibilityIdentificationP", "checkImg"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
@@ -1263,10 +1371,13 @@ depends-member:
 - !private ["So13UIAlertActionC", "init"]
 - !private ["So17UIAlertControllerC", "addAction"]
 - !private ["So17UIAlertControllerC", "init"]
+- !private ["So12UIAppearanceP", "alpha"]
+- !private ["So12UIAppearanceP", "backgroundView"]
 - !private ["So12UIAppearanceP", "checkImg"]
 - !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "deselectRow"]
+- !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "isHidden"]
 - !private ["So12UIAppearanceP", "nameLbl"]
 - !private ["So12UIAppearanceP", "numberOfSections"]
@@ -1279,6 +1390,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Calendar"]
 - !private ["So21UIAppearanceContainerP", "Date"]
 - !private ["So21UIAppearanceContainerP", "Goal"]
+- !private ["So21UIAppearanceContainerP", "Int"]
 - !private ["So21UIAppearanceContainerP", "LocalPushManager"]
 - !private ["So21UIAppearanceContainerP", "NSIndexSet"]
 - !private ["So21UIAppearanceContainerP", "NSMakeRange"]
@@ -1292,10 +1404,15 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
+- !private ["So21UIAppearanceContainerP", "UIImageView"]
 - !private ["So21UIAppearanceContainerP", "UINib"]
+- !private ["So21UIAppearanceContainerP", "UInt32"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addAction"]
 - !private ["So21UIAppearanceContainerP", "addGoalButton"]
+- !private ["So21UIAppearanceContainerP", "alpha"]
+- !private ["So21UIAppearanceContainerP", "arc4random_uniform"]
+- !private ["So21UIAppearanceContainerP", "backgroundView"]
 - !private ["So21UIAppearanceContainerP", "checkImg"]
 - !private ["So21UIAppearanceContainerP", "dayLbl"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
@@ -1304,6 +1421,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "goalList"]
 - !private ["So21UIAppearanceContainerP", "goalsTableView"]
+- !private ["So21UIAppearanceContainerP", "imgArray"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So21UIAppearanceContainerP", "init"]
@@ -1353,6 +1471,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "Calendar"]
 - !private ["So18UIContentContainerP", "Date"]
 - !private ["So18UIContentContainerP", "Goal"]
+- !private ["So18UIContentContainerP", "Int"]
 - !private ["So18UIContentContainerP", "LocalPushManager"]
 - !private ["So18UIContentContainerP", "NSIndexSet"]
 - !private ["So18UIContentContainerP", "NSMakeRange"]
@@ -1366,14 +1485,18 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "UIImage"]
+- !private ["So18UIContentContainerP", "UIImageView"]
 - !private ["So18UIContentContainerP", "UINib"]
+- !private ["So18UIContentContainerP", "UInt32"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "addAction"]
 - !private ["So18UIContentContainerP", "addGoalButton"]
+- !private ["So18UIContentContainerP", "arc4random_uniform"]
 - !private ["So18UIContentContainerP", "dayLbl"]
 - !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "goalList"]
 - !private ["So18UIContentContainerP", "goalsTableView"]
+- !private ["So18UIContentContainerP", "imgArray"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UIContentContainerP", "init"]
@@ -1413,10 +1536,13 @@ depends-member:
 - ["So18UIContentContainerP", "visibleRect"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "isHidden"]
+- !private ["So17UICoordinateSpaceP", "alpha"]
+- !private ["So17UICoordinateSpaceP", "backgroundView"]
 - !private ["So17UICoordinateSpaceP", "checkImg"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
 - !private ["So17UICoordinateSpaceP", "deselectRow"]
+- !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "isHidden"]
 - !private ["So17UICoordinateSpaceP", "nameLbl"]
 - !private ["So17UICoordinateSpaceP", "numberOfSections"]
@@ -1426,16 +1552,20 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "timeLbl"]
 - !private ["So17UICoordinateSpaceP", "titleLbl"]
+- !private ["So23UIDataSourceTranslatingP", "backgroundView"]
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
 - !private ["So23UIDataSourceTranslatingP", "deselectRow"]
 - !private ["So23UIDataSourceTranslatingP", "numberOfSections"]
 - !private ["So23UIDataSourceTranslatingP", "register"]
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
 - !private ["So23UIDataSourceTranslatingP", "reloadSections"]
+- !private ["So13UIDynamicItemP", "alpha"]
+- !private ["So13UIDynamicItemP", "backgroundView"]
 - !private ["So13UIDynamicItemP", "checkImg"]
 - !private ["So13UIDynamicItemP", "delegate"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "deselectRow"]
+- !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "isHidden"]
 - !private ["So13UIDynamicItemP", "nameLbl"]
 - !private ["So13UIDynamicItemP", "numberOfSections"]
@@ -1448,6 +1578,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Calendar"]
 - !private ["So18UIFocusEnvironmentP", "Date"]
 - !private ["So18UIFocusEnvironmentP", "Goal"]
+- !private ["So18UIFocusEnvironmentP", "Int"]
 - !private ["So18UIFocusEnvironmentP", "LocalPushManager"]
 - !private ["So18UIFocusEnvironmentP", "NSIndexSet"]
 - !private ["So18UIFocusEnvironmentP", "NSMakeRange"]
@@ -1461,10 +1592,15 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
+- !private ["So18UIFocusEnvironmentP", "UIImageView"]
 - !private ["So18UIFocusEnvironmentP", "UINib"]
+- !private ["So18UIFocusEnvironmentP", "UInt32"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addAction"]
 - !private ["So18UIFocusEnvironmentP", "addGoalButton"]
+- !private ["So18UIFocusEnvironmentP", "alpha"]
+- !private ["So18UIFocusEnvironmentP", "arc4random_uniform"]
+- !private ["So18UIFocusEnvironmentP", "backgroundView"]
 - !private ["So18UIFocusEnvironmentP", "checkImg"]
 - !private ["So18UIFocusEnvironmentP", "dayLbl"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
@@ -1473,6 +1609,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "goalList"]
 - !private ["So18UIFocusEnvironmentP", "goalsTableView"]
+- !private ["So18UIFocusEnvironmentP", "imgArray"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
@@ -1518,10 +1655,13 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
 - ["So18UIFocusEnvironmentP", "visibleRect"]
+- !private ["So11UIFocusItemP", "alpha"]
+- !private ["So11UIFocusItemP", "backgroundView"]
 - !private ["So11UIFocusItemP", "checkImg"]
 - !private ["So11UIFocusItemP", "delegate"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "deselectRow"]
+- !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "isHidden"]
 - !private ["So11UIFocusItemP", "nameLbl"]
 - !private ["So11UIFocusItemP", "numberOfSections"]
@@ -1531,10 +1671,13 @@ depends-member:
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "timeLbl"]
 - !private ["So11UIFocusItemP", "titleLbl"]
+- !private ["So20UIFocusItemContainerP", "alpha"]
+- !private ["So20UIFocusItemContainerP", "backgroundView"]
 - !private ["So20UIFocusItemContainerP", "checkImg"]
 - !private ["So20UIFocusItemContainerP", "delegate"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
 - !private ["So20UIFocusItemContainerP", "deselectRow"]
+- !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "isHidden"]
 - !private ["So20UIFocusItemContainerP", "nameLbl"]
 - !private ["So20UIFocusItemContainerP", "numberOfSections"]
@@ -1544,6 +1687,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So20UIFocusItemContainerP", "timeLbl"]
 - !private ["So20UIFocusItemContainerP", "titleLbl"]
+- !private ["So30UIFocusItemScrollableContainerP", "backgroundView"]
 - !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
 - !private ["So30UIFocusItemScrollableContainerP", "deselectRow"]
 - !private ["So30UIFocusItemScrollableContainerP", "numberOfSections"]
@@ -1556,6 +1700,7 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "timeLbl"]
 - !private ["So27UIGestureRecognizerDelegateP", "titleLbl"]
 - !private ["So7UIImageC", "init"]
+- !private ["So11UIImageViewC", "init"]
 - !private ["So11UIImageViewC", "isHidden"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So7UILabelC", "text"]
@@ -1563,6 +1708,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Calendar"]
 - !private ["So30UIPasteConfigurationSupportingP", "Date"]
 - !private ["So30UIPasteConfigurationSupportingP", "Goal"]
+- !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - !private ["So30UIPasteConfigurationSupportingP", "LocalPushManager"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSIndexSet"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSMakeRange"]
@@ -1576,10 +1722,15 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImageView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UINib"]
+- !private ["So30UIPasteConfigurationSupportingP", "UInt32"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "addGoalButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "alpha"]
+- !private ["So30UIPasteConfigurationSupportingP", "arc4random_uniform"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundView"]
 - !private ["So30UIPasteConfigurationSupportingP", "checkImg"]
 - !private ["So30UIPasteConfigurationSupportingP", "dayLbl"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
@@ -1588,6 +1739,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "goalList"]
 - !private ["So30UIPasteConfigurationSupportingP", "goalsTableView"]
+- !private ["So30UIPasteConfigurationSupportingP", "imgArray"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
@@ -1658,14 +1810,19 @@ depends-member:
 - !private ["So11UIResponderC", "UIAlertController"]
 - ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIImage"]
+- !private ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - !private ["So11UIResponderC", "UINib"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
+- !private ["So11UIResponderC", "UInt32"]
 - !private ["So11UIResponderC", "addAction"]
 - ["So11UIResponderC", "addGoalButton"]
 - ["So11UIResponderC", "addGoalsClickButton"]
 - ["So11UIResponderC", "addScheduleClickButton"]
+- !private ["So11UIResponderC", "alpha"]
+- !private ["So11UIResponderC", "arc4random_uniform"]
+- !private ["So11UIResponderC", "backgroundView"]
 - !private ["So11UIResponderC", "checkImg"]
 - ["So11UIResponderC", "dayLbl"]
 - !private ["So11UIResponderC", "delegate"]
@@ -1675,6 +1832,7 @@ depends-member:
 - ["So11UIResponderC", "doneButton_Press"]
 - ["So11UIResponderC", "goalList"]
 - ["So11UIResponderC", "goalsTableView"]
+- ["So11UIResponderC", "imgArray"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So11UIResponderC", "init"]
@@ -1723,6 +1881,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Calendar"]
 - !private ["So30UIResponderStandardEditActionsP", "Date"]
 - !private ["So30UIResponderStandardEditActionsP", "Goal"]
+- !private ["So30UIResponderStandardEditActionsP", "Int"]
 - !private ["So30UIResponderStandardEditActionsP", "LocalPushManager"]
 - !private ["So30UIResponderStandardEditActionsP", "NSIndexSet"]
 - !private ["So30UIResponderStandardEditActionsP", "NSMakeRange"]
@@ -1736,10 +1895,15 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImageView"]
 - !private ["So30UIResponderStandardEditActionsP", "UINib"]
+- !private ["So30UIResponderStandardEditActionsP", "UInt32"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addAction"]
 - !private ["So30UIResponderStandardEditActionsP", "addGoalButton"]
+- !private ["So30UIResponderStandardEditActionsP", "alpha"]
+- !private ["So30UIResponderStandardEditActionsP", "arc4random_uniform"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundView"]
 - !private ["So30UIResponderStandardEditActionsP", "checkImg"]
 - !private ["So30UIResponderStandardEditActionsP", "dayLbl"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
@@ -1748,6 +1912,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "goalList"]
 - !private ["So30UIResponderStandardEditActionsP", "goalsTableView"]
+- !private ["So30UIResponderStandardEditActionsP", "imgArray"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
@@ -1793,6 +1958,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
 - ["So30UIResponderStandardEditActionsP", "visibleRect"]
+- !private ["So12UIScrollViewC", "backgroundView"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "deselectRow"]
 - !private ["So12UIScrollViewC", "numberOfSections"]
@@ -1802,6 +1968,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "Calendar"]
 - !private ["So20UIScrollViewDelegateP", "Date"]
 - !private ["So20UIScrollViewDelegateP", "Goal"]
+- !private ["So20UIScrollViewDelegateP", "Int"]
 - !private ["So20UIScrollViewDelegateP", "LocalPushManager"]
 - !private ["So20UIScrollViewDelegateP", "NSIndexSet"]
 - !private ["So20UIScrollViewDelegateP", "NSMakeRange"]
@@ -1815,13 +1982,17 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "UIAlertAction"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertController"]
 - !private ["So20UIScrollViewDelegateP", "UIImage"]
+- !private ["So20UIScrollViewDelegateP", "UIImageView"]
 - !private ["So20UIScrollViewDelegateP", "UINib"]
+- !private ["So20UIScrollViewDelegateP", "UInt32"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "addGoalButton"]
+- !private ["So20UIScrollViewDelegateP", "arc4random_uniform"]
 - !private ["So20UIScrollViewDelegateP", "dayLbl"]
 - !private ["So20UIScrollViewDelegateP", "dismiss"]
 - !private ["So20UIScrollViewDelegateP", "goalList"]
 - !private ["So20UIScrollViewDelegateP", "goalsTableView"]
+- !private ["So20UIScrollViewDelegateP", "imgArray"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So20UIScrollViewDelegateP", "loadGoal"]
@@ -1857,6 +2028,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
 - ["So20UIScrollViewDelegateP", "visibleRect"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "backgroundView"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "deselectRow"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
@@ -1868,6 +2040,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Calendar"]
 - !private ["So16UIStateRestoringP", "Date"]
 - !private ["So16UIStateRestoringP", "Goal"]
+- !private ["So16UIStateRestoringP", "Int"]
 - !private ["So16UIStateRestoringP", "LocalPushManager"]
 - !private ["So16UIStateRestoringP", "NSIndexSet"]
 - !private ["So16UIStateRestoringP", "NSMakeRange"]
@@ -1881,14 +2054,18 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "UIImage"]
+- !private ["So16UIStateRestoringP", "UIImageView"]
 - !private ["So16UIStateRestoringP", "UINib"]
+- !private ["So16UIStateRestoringP", "UInt32"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "addAction"]
 - !private ["So16UIStateRestoringP", "addGoalButton"]
+- !private ["So16UIStateRestoringP", "arc4random_uniform"]
 - !private ["So16UIStateRestoringP", "dayLbl"]
 - !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "goalList"]
 - !private ["So16UIStateRestoringP", "goalsTableView"]
+- !private ["So16UIStateRestoringP", "imgArray"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So16UIStateRestoringP", "init"]
@@ -1926,6 +2103,7 @@ depends-member:
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
 - ["So16UIStateRestoringP", "visibleRect"]
+- !private ["So11UITableViewC", "backgroundView"]
 - !private ["So11UITableViewC", "dequeueReusableCell"]
 - !private ["So11UITableViewC", "deselectRow"]
 - !private ["So11UITableViewC", "numberOfSections"]
@@ -1940,6 +2118,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "Calendar"]
 - !private ["So21UITableViewDataSourceP", "Date"]
 - !private ["So21UITableViewDataSourceP", "Goal"]
+- !private ["So21UITableViewDataSourceP", "Int"]
 - !private ["So21UITableViewDataSourceP", "LocalPushManager"]
 - !private ["So21UITableViewDataSourceP", "NSIndexSet"]
 - !private ["So21UITableViewDataSourceP", "NSMakeRange"]
@@ -1953,13 +2132,17 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "UIAlertAction"]
 - !private ["So21UITableViewDataSourceP", "UIAlertController"]
 - !private ["So21UITableViewDataSourceP", "UIImage"]
+- !private ["So21UITableViewDataSourceP", "UIImageView"]
 - !private ["So21UITableViewDataSourceP", "UINib"]
+- !private ["So21UITableViewDataSourceP", "UInt32"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "addGoalButton"]
+- !private ["So21UITableViewDataSourceP", "arc4random_uniform"]
 - !private ["So21UITableViewDataSourceP", "dayLbl"]
 - !private ["So21UITableViewDataSourceP", "dismiss"]
 - !private ["So21UITableViewDataSourceP", "goalList"]
 - !private ["So21UITableViewDataSourceP", "goalsTableView"]
+- !private ["So21UITableViewDataSourceP", "imgArray"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedView"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So21UITableViewDataSourceP", "loadGoal"]
@@ -1997,6 +2180,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "Calendar"]
 - !private ["So19UITableViewDelegateP", "Date"]
 - !private ["So19UITableViewDelegateP", "Goal"]
+- !private ["So19UITableViewDelegateP", "Int"]
 - !private ["So19UITableViewDelegateP", "LocalPushManager"]
 - !private ["So19UITableViewDelegateP", "NSIndexSet"]
 - !private ["So19UITableViewDelegateP", "NSMakeRange"]
@@ -2010,13 +2194,17 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "UIAlertAction"]
 - !private ["So19UITableViewDelegateP", "UIAlertController"]
 - !private ["So19UITableViewDelegateP", "UIImage"]
+- !private ["So19UITableViewDelegateP", "UIImageView"]
 - !private ["So19UITableViewDelegateP", "UINib"]
+- !private ["So19UITableViewDelegateP", "UInt32"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "addGoalButton"]
+- !private ["So19UITableViewDelegateP", "arc4random_uniform"]
 - !private ["So19UITableViewDelegateP", "dayLbl"]
 - !private ["So19UITableViewDelegateP", "dismiss"]
 - !private ["So19UITableViewDelegateP", "goalList"]
 - !private ["So19UITableViewDelegateP", "goalsTableView"]
+- !private ["So19UITableViewDelegateP", "imgArray"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So19UITableViewDelegateP", "loadGoal"]
@@ -2054,6 +2242,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Calendar"]
 - !private ["So18UITraitEnvironmentP", "Date"]
 - !private ["So18UITraitEnvironmentP", "Goal"]
+- !private ["So18UITraitEnvironmentP", "Int"]
 - !private ["So18UITraitEnvironmentP", "LocalPushManager"]
 - !private ["So18UITraitEnvironmentP", "NSIndexSet"]
 - !private ["So18UITraitEnvironmentP", "NSMakeRange"]
@@ -2067,10 +2256,15 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
+- !private ["So18UITraitEnvironmentP", "UIImageView"]
 - !private ["So18UITraitEnvironmentP", "UINib"]
+- !private ["So18UITraitEnvironmentP", "UInt32"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addAction"]
 - !private ["So18UITraitEnvironmentP", "addGoalButton"]
+- !private ["So18UITraitEnvironmentP", "alpha"]
+- !private ["So18UITraitEnvironmentP", "arc4random_uniform"]
+- !private ["So18UITraitEnvironmentP", "backgroundView"]
 - !private ["So18UITraitEnvironmentP", "checkImg"]
 - !private ["So18UITraitEnvironmentP", "dayLbl"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
@@ -2079,6 +2273,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "goalList"]
 - !private ["So18UITraitEnvironmentP", "goalsTableView"]
+- !private ["So18UITraitEnvironmentP", "imgArray"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UITraitEnvironmentP", "init"]
@@ -2127,6 +2322,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Calendar"]
 - !private ["So23UIUserActivityRestoringP", "Date"]
 - !private ["So23UIUserActivityRestoringP", "Goal"]
+- !private ["So23UIUserActivityRestoringP", "Int"]
 - !private ["So23UIUserActivityRestoringP", "LocalPushManager"]
 - !private ["So23UIUserActivityRestoringP", "NSIndexSet"]
 - !private ["So23UIUserActivityRestoringP", "NSMakeRange"]
@@ -2140,10 +2336,15 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "UIAlertAction"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertController"]
 - !private ["So23UIUserActivityRestoringP", "UIImage"]
+- !private ["So23UIUserActivityRestoringP", "UIImageView"]
 - !private ["So23UIUserActivityRestoringP", "UINib"]
+- !private ["So23UIUserActivityRestoringP", "UInt32"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "addAction"]
 - !private ["So23UIUserActivityRestoringP", "addGoalButton"]
+- !private ["So23UIUserActivityRestoringP", "alpha"]
+- !private ["So23UIUserActivityRestoringP", "arc4random_uniform"]
+- !private ["So23UIUserActivityRestoringP", "backgroundView"]
 - !private ["So23UIUserActivityRestoringP", "checkImg"]
 - !private ["So23UIUserActivityRestoringP", "dayLbl"]
 - !private ["So23UIUserActivityRestoringP", "delegate"]
@@ -2152,6 +2353,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "dismiss"]
 - !private ["So23UIUserActivityRestoringP", "goalList"]
 - !private ["So23UIUserActivityRestoringP", "goalsTableView"]
+- !private ["So23UIUserActivityRestoringP", "imgArray"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedView"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So23UIUserActivityRestoringP", "init"]
@@ -2197,10 +2399,13 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "viewForZooming"]
 - ["So23UIUserActivityRestoringP", "viewForZoomingInScrollView"]
 - ["So23UIUserActivityRestoringP", "visibleRect"]
+- !private ["So6UIViewC", "alpha"]
+- !private ["So6UIViewC", "backgroundView"]
 - !private ["So6UIViewC", "checkImg"]
 - !private ["So6UIViewC", "delegate"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "deselectRow"]
+- !private ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "isHidden"]
 - !private ["So6UIViewC", "nameLbl"]
 - !private ["So6UIViewC", "numberOfSections"]
@@ -2235,20 +2440,24 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIAlertController"]
 - ["So16UIViewControllerC", "UIButton"]
 - !private ["So16UIViewControllerC", "UIImage"]
+- !private ["So16UIViewControllerC", "UIImageView"]
 - ["So16UIViewControllerC", "UILabel"]
 - !private ["So16UIViewControllerC", "UINib"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
+- !private ["So16UIViewControllerC", "UInt32"]
 - ["So16UIViewControllerC", ""]
 - !private ["So16UIViewControllerC", "addAction"]
 - ["So16UIViewControllerC", "addGoalButton"]
 - ["So16UIViewControllerC", "addGoalsClickButton"]
 - ["So16UIViewControllerC", "addScheduleClickButton"]
+- !private ["So16UIViewControllerC", "arc4random_uniform"]
 - ["So16UIViewControllerC", "dayLbl"]
 - !private ["So16UIViewControllerC", "dismiss"]
 - ["So16UIViewControllerC", "doneButton_Press"]
 - ["So16UIViewControllerC", "goalList"]
 - ["So16UIViewControllerC", "goalsTableView"]
+- ["So16UIViewControllerC", "imgArray"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16UIViewControllerC", "init"]
@@ -2286,6 +2495,8 @@ depends-member:
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
 - ["So16UIViewControllerC", "visibleRect"]
+- !private ["s6UInt32V", "init"]
+- !private ["SU", "init"]
 - ["13TodaySchedule14ViewControllerC", "CGFloat"]
 - !private ["13TodaySchedule14ViewControllerC", "Calendar"]
 - ["13TodaySchedule14ViewControllerC", "Date"]
@@ -2311,19 +2522,23 @@ depends-member:
 - !private ["13TodaySchedule14ViewControllerC", "UIAlertController"]
 - ["13TodaySchedule14ViewControllerC", "UIButton"]
 - !private ["13TodaySchedule14ViewControllerC", "UIImage"]
+- !private ["13TodaySchedule14ViewControllerC", "UIImageView"]
 - ["13TodaySchedule14ViewControllerC", "UILabel"]
 - !private ["13TodaySchedule14ViewControllerC", "UINib"]
 - ["13TodaySchedule14ViewControllerC", "UITableView"]
 - ["13TodaySchedule14ViewControllerC", "UITableViewCell"]
+- !private ["13TodaySchedule14ViewControllerC", "UInt32"]
 - ["13TodaySchedule14ViewControllerC", "addGoalButton"]
 - ["13TodaySchedule14ViewControllerC", "addGoalsClickButton"]
 - ["13TodaySchedule14ViewControllerC", "addScheduleClickButton"]
+- !private ["13TodaySchedule14ViewControllerC", "arc4random_uniform"]
 - ["13TodaySchedule14ViewControllerC", "dayLbl"]
 - ["13TodaySchedule14ViewControllerC", "deinit"]
 - !private ["13TodaySchedule14ViewControllerC", "dismiss"]
 - ["13TodaySchedule14ViewControllerC", "doneButton_Press"]
 - ["13TodaySchedule14ViewControllerC", "goalList"]
 - ["13TodaySchedule14ViewControllerC", "goalsTableView"]
+- ["13TodaySchedule14ViewControllerC", "imgArray"]
 - ["13TodaySchedule14ViewControllerC", "indexPathForPreferredFocusedView"]
 - ["13TodaySchedule14ViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["13TodaySchedule14ViewControllerC", "init"]
@@ -2360,10 +2575,14 @@ depends-member:
 - ["13TodaySchedule14ViewControllerC", "viewForZooming"]
 - ["13TodaySchedule14ViewControllerC", "viewForZoomingInScrollView"]
 - ["13TodaySchedule14ViewControllerC", "visibleRect"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "alpha"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundView"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "checkImg"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "deselectRow"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHidden"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "nameLbl"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "numberOfSections"]
@@ -2373,23 +2592,29 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "timeLbl"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "titleLbl"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "Name"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Goal"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LocalPushManager"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSIndexSet"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSMakeRange"]
@@ -2404,11 +2629,16 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImageView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UINib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UInt32"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addGoalButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "alpha"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "arc4random_uniform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "check"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "checkImg"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "count"]
@@ -2421,6 +2651,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "goalList"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "goalsTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imgArray"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -2479,14 +2710,16 @@ depends-member:
 - !private ["10Foundation14_MutableBoxingP", "hour"]
 - !private ["10Foundation14_MutableBoxingP", "minute"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "backgroundView"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "current"]
 - !private ["s21_ObjectiveCBridgeableP", "dateComponents"]
 - !private ["s21_ObjectiveCBridgeableP", "day"]
 - !private ["s21_ObjectiveCBridgeableP", "dayOfWeek"]
 - !private ["s21_ObjectiveCBridgeableP", "destructive"]
 - !private ["s21_ObjectiveCBridgeableP", "hour"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isHidden"]
 - !private ["s21_ObjectiveCBridgeableP", "minute"]
 - !private ["s21_ObjectiveCBridgeableP", "month"]
@@ -2494,46 +2727,54 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "register"]
 - !private ["s21_ObjectiveCBridgeableP", "reloadSections"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s20_SwiftNewtypeWrapperP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "10RealmSwift11AddableTypeP"
+- !private "Sa"
+- !private "s13ArrayProtocolP"
 - !private "10RealmSwift28AssistedObjectiveCBridgeableP"
-- !private "SK"
+- "SK"
+- !private "Sz"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "10Foundation8CalendarV"
-- !private "Sl"
-- !private "SL"
+- "Sl"
+- "SL"
 - !private "10Foundation8CalendarV9ComponentO"
 - "s28CustomDebugStringConvertibleP"
 - !private "10RealmSwift26CustomObjectiveCBridgeableP"
-- !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "10Foundation4DateV"
 - !private "10Foundation14DateComponentsV"
-- !private "Se"
-- !private "SE"
+- "Se"
+- "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
 - "13TodaySchedule4GoalC"
 - !private "13TodaySchedule17GoalTableViewCellC"
 - "SH"
 - !private "10Foundation9IndexPathV"
+- !private "Si"
 - !private "s22LazyCollectionProtocolP"
 - !private "s20LazySequenceProtocolP"
 - !private "13TodaySchedule16LocalPushManagerC"
-- !private "s25LosslessStringConvertibleP"
+- "s25LosslessStringConvertibleP"
 - !private "10RealmSwift10MinMaxTypeP"
-- !private "s10MirrorPathP"
+- "s10MirrorPathP"
 - !private "SM"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
@@ -2549,25 +2790,29 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - !private "So18NSNotificationNamea"
 - !private "So20NSNotificationCenterC"
+- !private "Sj"
 - !private "10RealmSwift6ObjectC"
 - !private "Sq"
 - !private "10RealmSwift16OptionalProtocolP"
 - !private "So13RLMObjectBaseC"
 - !private "Sk"
-- !private "Sm"
+- "Sm"
 - !private "SY"
 - "10RealmSwift0A0C"
 - !private "10RealmSwift0A10CollectionP"
 - !private "10RealmSwift0A14CollectionBaseP"
-- !private "10RealmSwift0A15CollectionValueP"
+- "10RealmSwift0A15CollectionValueP"
 - !private "10RealmSwift0A12OptionalTypeP"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "10RealmSwift7ResultsC"
 - !private "So23UITableViewRowAnimationV"
-- !private "ST"
+- "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
 - !private "s5SliceV"
-- !private "SS"
-- !private "Sy"
+- !private "Sx"
+- "SS"
+- "Sy"
 - !private "So22UIAlertControllerStyleV"
 - !private "So18UIAlertActionStyleV"
 - !private "12SwipeCellKit0A6ActionC"
@@ -2579,8 +2824,8 @@ depends-nominal:
 - !private "12SwipeCellKit0a9TableViewB0C"
 - "12SwipeCellKit0a9TableViewB8DelegateP"
 - !private "12SwipeCellKit9SwipeableP"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - !private "10RealmSwift14ThreadConfinedP"
 - "13TodaySchedule4ToDoC"
 - !private "13TodaySchedule17ToDoTableViewCellC"
@@ -2622,26 +2867,31 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "s6UInt32V"
+- !private "SU"
 - "13TodaySchedule14ViewControllerC"
+- !private "s18_BitwiseOperationsP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
+- "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation14_MutableBoxingP"
-- !private "s21_ObjectiveCBridgeableP"
+- "s21_ObjectiveCBridgeableP"
 - !private "s20_SwiftNewtypeWrapperP"
-- !private "s16_SwiftStringViewP"
+- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Modules/SwipeCellKit.swiftmodule/arm64.swiftmodule"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Modules/SwipeCellKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
@@ -2654,57 +2904,57 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Headers/SwipeCellKit-umbrella.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm+Sync.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/NSError+RLMSync.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMThreadSafeReference.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectBase_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMCollection_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermission.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSubscription.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Headers/SwipeCellKit-Swift.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
-- "/Users/nguyenductai/Desktop/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Modules/module.modulemap"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Headers/SwipeCellKit-umbrella.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm+Sync.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/NSError+RLMSync.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMThreadSafeReference.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectBase_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMCollection_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermission.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSubscription.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Headers/SwipeCellKit-Swift.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -2717,4 +2967,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1819b4c3b18f3589e009850d4669c31f"
+interface-hash: "6c8b415f8a379441b50b08269278982f"
