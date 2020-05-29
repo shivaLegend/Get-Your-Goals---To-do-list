@@ -1,0 +1,16 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "2469d1814eaf9d26a9a1416271b4b4dc"
+build_time: [1551842836, 725544000]
+inputs:
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/Views/Custom UIButton/RoundUIButton.swift": !dirty [1546336122, 0]
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/Controllers/AddToDoViewController.swift": !dirty [1547024261, 0]
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/Controllers/AddGoalViewController.swift": !dirty [1545982165, 0]
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/Models/ToDo.swift": !dirty [1546056398, 0]
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/Extensions/DayMonthString.swift": !dirty [1545989383, 0]
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/Views/ToDoTableViewCell.swift": !dirty [1549115613, 0]
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/Controllers/ViewController.swift": !dirty [1549121400, 0]
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/Views/Custom UIView/RoundUIView.swift": !dirty [1545922127, 0]
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/Views/GoalTableViewCell.swift": !dirty [1545317606, 0]
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/AppDelegate.swift": !dirty [1546493662, 0]
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/Models/Goal.swift": !dirty [1545318167, 0]
+  "/Users/nguyenductai/Documents/My app/TodaySchedule/TodaySchedule/Helper/LocalPushManager.swift": !dirty [1549311008, 0]

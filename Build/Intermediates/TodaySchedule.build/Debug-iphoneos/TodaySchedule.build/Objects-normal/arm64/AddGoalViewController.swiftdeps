@@ -43,7 +43,7 @@ depends-member:
 - !private ["13TodaySchedule21AddGoalViewControllerC", "dismiss"]
 - ["13TodaySchedule21AddGoalViewControllerC", "goalTextView"]
 - ["13TodaySchedule21AddGoalViewControllerC", "init"]
-- ["13TodaySchedule21AddGoalViewControllerC", "realm"]
+- !private ["13TodaySchedule21AddGoalViewControllerC", "realm"]
 - ["13TodaySchedule21AddGoalViewControllerC", "saveClick"]
 - ["13TodaySchedule21AddGoalViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["13TodaySchedule21AddGoalViewControllerC", "scrollViewDidEndDecelerating"]
@@ -68,8 +68,6 @@ depends-member:
 - ["13TodaySchedule21AddGoalViewControllerC", "viewDidLoad"]
 - ["13TodaySchedule21AddGoalViewControllerC", "viewForZooming"]
 - ["13TodaySchedule21AddGoalViewControllerC", "viewForZoomingInScrollView"]
-- !private ["10RealmSwift28AssistedObjectiveCBridgeableP", "init"]
-- !private ["10RealmSwift28AssistedObjectiveCBridgeableP", "name"]
 - !private ["SK", "init"]
 - !private ["SK", "init"]
 - !private ["SK", "isEmpty"]
@@ -108,7 +106,6 @@ depends-member:
 - !private ["s7CVarArgP", "isEmpty"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "lightGray"]
-- !private ["s7CVarArgP", "name"]
 - !private ["s7CVarArgP", "post"]
 - !private ["s7CVarArgP", "realm"]
 - ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
@@ -165,7 +162,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "lightGray"]
-- !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "post"]
 - !private ["s28CustomDebugStringConvertibleP", "realm"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -194,12 +190,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
-- !private ["10RealmSwift26CustomObjectiveCBridgeableP", "delegate"]
-- !private ["10RealmSwift26CustomObjectiveCBridgeableP", "isEmpty"]
-- !private ["10RealmSwift26CustomObjectiveCBridgeableP", "layer"]
-- !private ["10RealmSwift26CustomObjectiveCBridgeableP", "text"]
-- !private ["10RealmSwift26CustomObjectiveCBridgeableP", "textColor"]
-- !private ["10RealmSwift26CustomObjectiveCBridgeableP", "textContainerInset"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -236,7 +226,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "lightGray"]
-- !private ["s23CustomStringConvertibleP", "name"]
 - !private ["s23CustomStringConvertibleP", "post"]
 - !private ["s23CustomStringConvertibleP", "realm"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -292,7 +281,6 @@ depends-member:
 - !private ["SQ", "UIEdgeInsets"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
-- !private ["SQ", "add"]
 - !private ["SQ", "black"]
 - !private ["SQ", "borderColor"]
 - !private ["SQ", "borderWidth"]
@@ -302,12 +290,11 @@ depends-member:
 - !private ["SQ", "delegate"]
 - !private ["SQ", "dismiss"]
 - !private ["SQ", "goalTextView"]
-- ["SQ", "init"]
+- !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isEmpty"]
 - !private ["SQ", "layer"]
 - !private ["SQ", "lightGray"]
-- !private ["SQ", "name"]
 - !private ["SQ", "post"]
 - !private ["SQ", "realm"]
 - ["SQ", "scrollViewDidChangeAdjustedContentInset"]
@@ -336,7 +323,6 @@ depends-member:
 - !private ["SQ", "viewDidLoad"]
 - ["SQ", "viewForZooming"]
 - ["SQ", "viewForZoomingInScrollView"]
-- !private ["SQ", "write"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -378,7 +364,6 @@ depends-member:
 - !private ["SH", "isEmpty"]
 - !private ["SH", "layer"]
 - !private ["SH", "lightGray"]
-- !private ["SH", "name"]
 - !private ["SH", "post"]
 - !private ["SH", "realm"]
 - ["SH", "scrollViewDidChangeAdjustedContentInset"]
@@ -538,9 +523,8 @@ depends-member:
 - !private ["So8NSObjectC", "isEmpty"]
 - !private ["So8NSObjectC", "layer"]
 - !private ["So8NSObjectC", "lightGray"]
-- !private ["So8NSObjectC", "name"]
 - !private ["So8NSObjectC", "post"]
-- ["So8NSObjectC", "realm"]
+- !private ["So8NSObjectC", "realm"]
 - ["So8NSObjectC", "saveClick"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectC", "scrollViewDidEndDecelerating"]
@@ -590,7 +574,6 @@ depends-member:
 - !private ["So8NSObjectP", "isEmpty"]
 - !private ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "lightGray"]
-- !private ["So8NSObjectP", "name"]
 - !private ["So8NSObjectP", "post"]
 - !private ["So8NSObjectP", "realm"]
 - ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
@@ -631,40 +614,16 @@ depends-member:
 - !private ["So18NSNotificationNamea", "init"]
 - !private ["So20NSNotificationCenterC", "default"]
 - !private ["So20NSNotificationCenterC", "post"]
-- !private ["10RealmSwift6ObjectC", "init"]
-- !private ["10RealmSwift6ObjectC", "name"]
 - !private ["Sq", "delegate"]
 - !private ["Sq", "isEmpty"]
 - !private ["Sq", "layer"]
 - !private ["Sq", "text"]
 - !private ["Sq", "textColor"]
 - !private ["Sq", "textContainerInset"]
-- !private ["10RealmSwift16OptionalProtocolP", "delegate"]
-- !private ["10RealmSwift16OptionalProtocolP", "isEmpty"]
-- !private ["10RealmSwift16OptionalProtocolP", "layer"]
-- !private ["10RealmSwift16OptionalProtocolP", "text"]
-- !private ["10RealmSwift16OptionalProtocolP", "textColor"]
-- !private ["10RealmSwift16OptionalProtocolP", "textContainerInset"]
-- !private ["So13RLMObjectBaseC", "init"]
-- !private ["So13RLMObjectBaseC", "name"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["Sm", "isEmpty"]
 - !private ["SY", "init"]
-- !private ["10RealmSwift0A0C", "add"]
-- ["10RealmSwift0A0C", "init"]
-- !private ["10RealmSwift0A0C", "write"]
-- !private ["10RealmSwift0A15CollectionValueP", "_getBuiltinLogicValue"]
-- !private ["10RealmSwift0A15CollectionValueP", "delegate"]
-- !private ["10RealmSwift0A15CollectionValueP", "init"]
-- !private ["10RealmSwift0A15CollectionValueP", "init"]
-- !private ["10RealmSwift0A15CollectionValueP", "isEmpty"]
-- !private ["10RealmSwift0A15CollectionValueP", "layer"]
-- !private ["10RealmSwift0A15CollectionValueP", "name"]
-- !private ["10RealmSwift0A15CollectionValueP", "text"]
-- !private ["10RealmSwift0A15CollectionValueP", "textColor"]
-- !private ["10RealmSwift0A15CollectionValueP", "textContainerInset"]
-- !private ["10RealmSwift0A12OptionalTypeP", "_getBuiltinLogicValue"]
 - !private ["ST", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "isEmpty"]
@@ -680,8 +639,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "isEmpty"]
-- !private ["10RealmSwift14ThreadConfinedP", "init"]
-- !private ["10RealmSwift14ThreadConfinedP", "name"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
@@ -901,7 +858,7 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
-- ["So11UIResponderC", "realm"]
+- !private ["So11UIResponderC", "realm"]
 - ["So11UIResponderC", "saveClick"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So11UIResponderC", "scrollViewDidEndDecelerating"]
@@ -1201,7 +1158,7 @@ depends-member:
 - ["So16UIViewControllerC", "goalTextView"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
-- ["So16UIViewControllerC", "realm"]
+- !private ["So16UIViewControllerC", "realm"]
 - ["So16UIViewControllerC", "saveClick"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
@@ -1276,7 +1233,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lightGray"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "post"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "realm"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1320,7 +1276,6 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "isEmpty"]
 depends-nominal:
 - "13TodaySchedule21AddGoalViewControllerC"
-- !private "10RealmSwift28AssistedObjectiveCBridgeableP"
 - !private "SK"
 - !private "Sb"
 - !private "So7CALayerC"
@@ -1330,7 +1285,6 @@ depends-nominal:
 - !private "Sl"
 - !private "SL"
 - "s28CustomDebugStringConvertibleP"
-- !private "10RealmSwift26CustomObjectiveCBridgeableP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
@@ -1359,21 +1313,14 @@ depends-nominal:
 - !private "So8NSStringC"
 - !private "So18NSNotificationNamea"
 - !private "So20NSNotificationCenterC"
-- !private "10RealmSwift6ObjectC"
 - !private "Sq"
-- !private "10RealmSwift16OptionalProtocolP"
-- !private "So13RLMObjectBaseC"
 - !private "Sm"
 - !private "SY"
-- "10RealmSwift0A0C"
-- !private "10RealmSwift0A15CollectionValueP"
-- !private "10RealmSwift0A12OptionalTypeP"
 - !private "ST"
 - !private "SS"
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "10RealmSwift14ThreadConfinedP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -1421,7 +1368,6 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
 - "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Modules/SwipeCellKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
@@ -1435,55 +1381,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
 - "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Headers/SwipeCellKit-umbrella.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm+Sync.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/NSError+RLMSync.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMThreadSafeReference.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectBase_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMCollection_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermission.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSubscription.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
 - "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Headers/SwipeCellKit-Swift.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
-- "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
 - "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
 - "/Users/nguyenductai/Documents/My app/TodaySchedule/Build/Products/Debug-iphoneos/SwipeCellKit/SwipeCellKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"

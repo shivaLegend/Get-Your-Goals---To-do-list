@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "639514dc4f918ae936b32d8129918fa2"
-build_time: [1549121415, 291709000]
+build_time: [1551538860, 801001000]
 inputs:
   "/Users/nguyenductai/Documents/My app/TodaySchedule/Pods/SwipeCellKit/Source/Extensions.swift": [1547025119, 0]
   "/Users/nguyenductai/Documents/My app/TodaySchedule/Pods/SwipeCellKit/Source/Swipeable.swift": [1547025119, 0]
